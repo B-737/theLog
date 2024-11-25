@@ -1,3 +1,11 @@
+async function getFile() {
+    // Open file picker and destructure the result the first handle
+    const [fileHandle] = await window.showOpenFilePicker();
+    const file = await fileHandle.getFile();
+    return file;
+  }
+  
+
 function addFlight(){
     let date = document.getElementById("date").value;
     let registration = document.getElementById("registration").value;
