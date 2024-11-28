@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <!-- HEADER -->
     <header
       class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom container"
     >
@@ -29,154 +30,56 @@
         <li class="nav-item">
           <a href="#" class="nav-link active" aria-current="page">Overview</a>
         </li>
-        <li class="nav-item"><a href="#" class="nav-link">New</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Logbook</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">New</a></li>
+        <li class="nav-item">
+          <a href="new.html" class="nav-link">Logbook</a>
+        </li>
         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
       </ul>
     </header>
 
-    <div class="container newFlight">
-      <h3 class="text-start mb-3">Add flight</h3>
-      <form action="">
-        <div class="row">
-          <div class="col mb-3">
-            <label for="date" class="form-label">Date</label>
-            <input id="date" class="form-control" type="date" />
-          </div>
-          <div class="col mb-3">
-            <label for="formGroupExampleInput" class="form-label"
-              >Aircraft registration</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="registration"
-              placeholder="EIDAD"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col mb-3">
-            <label for="formGroupExampleInput" class="form-label"
-              >Departure aerodrome</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="departure"
-              placeholder="e.g. EIDW or DUB"
-            />
-          </div>
-          <div class="col mb-3">
-            <label for="formGroupExampleInput2" class="form-label"
-              >Arrival aerodrome</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="arrival"
-              placeholder="e.g. EHAM or AMS"
-            />
-          </div>
-        </div>
+    <!-- DISPLAY LOG -->
 
-        <div class="row">
-          <div class="col mb-3">
-            <label for="formGroupExampleInput" class="form-label"
-              >Off block</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="offblock"
-              placeholder="e.g. 0420"
-            />
-          </div>
-          <div class="col mb-3">
-            <label for="formGroupExampleInput2" class="form-label"
-              >On Block</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="onblock"
-              placeholder="e.g. 0523"
-            />
-          </div>
+    <div class="container">
+      <div class="row">
+        <h1>Search Row Data</h1>
+        <div class="container">
+          <label for="column">Column Name:</label>
+          <input type="text" id="column" placeholder="e.g., registration" />
+          <br />
+          <label for="value">Value:</label>
+          <input type="text" id="value" placeholder="e.g., ABC123" />
+          <br />
+          <button onclick="fetchData()">Search</button>
         </div>
-
-        <div class="row">
-          <div class="col mb-3">
-            <label for="formGroupExampleInput" class="form-label"
-              >Airborne</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="airborne"
-              placeholder="e.g. 0431"
-            />
-          </div>
-          <div class="col mb-3">
-            <label for="formGroupExampleInput2" class="form-label"
-              >Landed</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="landed"
-              placeholder="e.g. 0514"
-            />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col mb-3">
-            <div class="form-check form-switch">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                role="switch"
-                id="pilotFlying"
-              />
-              <label class="form-check-label" for="flexSwitchCheckDefault"
-                >Pilot flying</label
-              >
-            </div>
-            <div class="form-check form-switch">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                role="switch"
-                id="safetyPilot"
-              />
-              <label class="form-check-label" for="flexSwitchCheckChecked"
-                >Safety pilot</label
-              >
-            </div>
-          </div>
-          <div class="col mb-3 container">
-            <div class="row float-end">
-              <div class="col">
-                <button type="button" class="btn btn-outline-secondary">
-                  Cancel
-                </button>
-              </div>
-              <div class="col">
-                <button
-                  type="submit"
-                  onclick="getFile()"
-                  class="btn btn-primary"
-                >
-                  Add
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
+        <hr />
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Results</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody"></tbody>
+        </table>
+      </div>
     </div>
 
+    <div class="container">
+      <div class="row">
+        <h1>Sheet Data</h1>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Registration</th>
+            </tr>
+          </thead>
+          <tbody id="dataBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item">
@@ -195,11 +98,14 @@
       <p class="text-center text-body-secondary">© 2024 the Log</p>
       <p class="text-end text-body-secondary mx-2">V 1.1</p>
     </footer>
+
+    <!-- SCRIPTS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
     <script src="script.js"></script>
+    <script src="sheetsCode.js"></script>
   </body>
 </html>
