@@ -1,26 +1,42 @@
-// Function to fetch and display all data
-async function loadData() {
-  google.script.run.withSuccessHandler(displayData).fetchAllData();
-}
+async function fetchData() {
+    const column = document.getElementById("column").value;
+    const value = document.getElementById("value").value;
 
-// Display data in a table
-function displayData(data) {
-  const tableBody = document.getElementById("dataBody");
+    // Build the API URL
+    const apiUrl = `https://script.google.com/macros/s/AKfycbzs8RrgF4UsKh7qclLILeUZaEx4lovVykV4HoFUH5-uM8zjsIyVtXeLk1LPYwwgl3v8IA/exec?column=${encodeURIComponent(column)}&value=${encodeURIComponent(value)}`;
+    
+    try {
+      const response = await fetch(apiUrl);
+      const data = await response.json();
 
-  // Clear any existing content
-  tableBody.innerHTML = "";
+      displayData(data);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      alert("Failed to fetch data. Check console for details.");
+    }
+  }
 
-  // Loop through each row and display it
-  data.forEach((row) => {
-    const rowElement = document.createElement("tr");
-    row.forEach((cell) => {
-      const cellElement = document.createElement("td");
-      cellElement.textContent = cell;
-      rowElement.appendChild(cellElement);
+  function displayData(data) {
+    const tableBody = document.getElementById("dataBody");
+    tableBody.innerHTML = ""; // Clear existing rows
+
+    if (data.error) {
+      alert(data.error);
+      return;
+    }
+
+    if (data.length === 0) {
+      alert("No matching data found.");
+      return;
+    }
+
+    data.forEach(row => {
+      const rowElement = document.createElement("tr");
+      row.forEach(cell => {
+        const cellElement = document.createElement("td");
+        cellElement.textContent = cell;
+        rowElement.appendChild(cellElement);
+      });
+      tableBody.appendChild(rowElement);
     });
-    tableBody.appendChild(rowElement);
-  });
-}
-
-// Load data when the page loads
-window.onload = loadData;
+  }

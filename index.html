@@ -31,6 +31,7 @@
           <a href="#" class="nav-link active" aria-current="page">Overview</a>
         </li>
         <li class="nav-item"><a href="index.html" class="nav-link">New</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link">Import</a></li>
         <li class="nav-item">
           <a href="new.html" class="nav-link">Logbook</a>
         </li>
@@ -38,46 +39,61 @@
       </ul>
     </header>
 
+
+    <div class="container">
+      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    </div>
+    <!-- MONTH SELECTOR  -->
+    <div class="container">
+      <div class="input-group">
+       
+        <button type="button" class="btn btn-outline-secondary">1</button>
+    <button type="button" class="btn btn-outline-secondary">2</button>
+    <button type="button" class="btn btn-outline-secondary">3</button>
+    <button type="button" class="btn btn-outline-secondary">4</button>
+    <button type="button" class="btn btn-outline-secondary">5</button>
+    <button type="button" class="btn btn-outline-secondary">6</button>
+    <button type="button" class="btn btn-outline-secondary">7</button>
+    <button type="button" class="btn btn-outline-secondary">8</button>
+    <button type="button" class="btn btn-outline-secondary">9</button>
+    <button type="button" class="btn btn-outline-secondary">10</button>
+    <button type="button" class="btn btn-outline-secondary">11</button>
+    <button type="button" class="btn btn-outline-secondary">12</button>
+      
+    <input type="text" class="form-control" placeholder="2024" aria-label="Input group example" aria-describedby="btnGroupAddon2"></div>
+      
+      </div>
+    </div>
+
     <!-- DISPLAY LOG -->
 
-    <div class="container">
-      <div class="row">
-        <h1>Search Row Data</h1>
-        <div class="container">
-          <label for="column">Column Name:</label>
-          <input type="text" id="column" placeholder="e.g., registration" />
-          <br />
-          <label for="value">Value:</label>
-          <input type="text" id="value" placeholder="e.g., ABC123" />
-          <br />
-          <button onclick="fetchData()">Search</button>
-        </div>
-        <hr />
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Results</th>
-            </tr>
-          </thead>
-          <tbody id="resultsBody"></tbody>
-        </table>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <h1>Sheet Data</h1>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Registration</th>
-            </tr>
-          </thead>
-          <tbody id="dataBody"></tbody>
-        </table>
-      </div>
+
+  <div class="container">
+    <div class="row">
+      <h1>Fetch Google Sheet Data</h1>
+      <label for="column">Column Name:</label>
+      <input type="text" id="column" placeholder="e.g., registration">
+      <br>
+      <label for="value">Value:</label>
+      <input type="text" id="value" placeholder="e.g., ABC123">
+      <br>
+      <button onclick="fetchData()">Search</button>
+    
+      <h2>Results</h2>
+      <table border="1">
+        <thead>
+          <tr>
+   
+          </tr>
+        </thead>
+        <tbody id="dataBody"></tbody>
+      </table>
     </div>
+  </div>
 
     <!-- FOOTER -->
     <footer class="py-3 my-4">
