@@ -10,118 +10,655 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header
-      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom container"
-    >
-      <a
-        href="/"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-      >
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-        <span class="fs-4">the Log</span>
-      </a>
 
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page">Overview</a>
-        </li>
-        <li class="nav-item"><a href="new.html" class="nav-link">New</a></li>
-        <li class="nav-item"><a href="import.html" class="nav-link">Import</a></li>
-        <li class="nav-item">
-          <a href="logbook.html" class="nav-link">Logbook</a>
-        </li>
-        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-      </ul>
-    </header>
-
-
-    <div class="container">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
-    </div>
-    <!-- MONTH SELECTOR  -->
-    <div class="container">
-      <div class="input-group">
-       
-        <button type="button" class="btn btn-outline-secondary">1</button>
-    <button type="button" class="btn btn-outline-secondary">2</button>
-    <button type="button" class="btn btn-outline-secondary">3</button>
-    <button type="button" class="btn btn-outline-secondary">4</button>
-    <button type="button" class="btn btn-outline-secondary">5</button>
-    <button type="button" class="btn btn-outline-secondary">6</button>
-    <button type="button" class="btn btn-outline-secondary">7</button>
-    <button type="button" class="btn btn-outline-secondary">8</button>
-    <button type="button" class="btn btn-outline-secondary">9</button>
-    <button type="button" class="btn btn-outline-secondary">10</button>
-    <button type="button" class="btn btn-outline-secondary">11</button>
-    <button type="button" class="btn btn-outline-secondary">12</button>
-      
-    <input type="text" class="form-control" placeholder="2024" aria-label="Input group example" aria-describedby="btnGroupAddon2"></div>
-      
-      </div>
-    </div>
-
-    <!-- DISPLAY LOG -->
-
-
-
-  <div class="container">
-    <div class="row">
-      <h1>Fetch Google Sheet Data</h1>
-      <label for="column">Column Name:</label>
-      <input type="text" id="column" placeholder="e.g., registration">
-      <br>
-      <label for="value">Value:</label>
-      <input type="text" id="value" placeholder="e.g., ABC123">
-      <br>
-      <button onclick="fetchData()">Search</button>
-    
-      <h2>Results</h2>
-      <table border="1">
-        <thead>
-          <tr>
-   
-          </tr>
-        </thead>
-        <tbody id="dataBody"></tbody>
-      </table>
-    </div>
-  </div>
-
-    <!-- FOOTER -->
-    <footer class="py-3 my-4">
-      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Overview</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">New</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Pilot</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">About</a>
-        </li>
-      </ul>
-      <p class="text-center text-body-secondary">© 2024 the Log</p>
-      <p class="text-end text-body-secondary mx-2">V 1.1</p>
-    </footer>
-
-    <!-- SCRIPTS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
-    <script src="sheetsCode.js"></script>
+  
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="container">
+      <header
+        class="align-items-center justify-content-center justify-content-md-between mb-4 border-bottom"
+      >
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+          <li class="nav-item dropdown align-self-center">
+            <button
+              class="btn dropdown-toggle"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Videoproductie
+            </button>
+            <ul class="dropdown-menu dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
+              <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
+              <li><a class="dropdown-item" href="#">Aftermovie</a></li>
+              <li><a class="dropdown-item" href="#">Marketing</a></li>
+              <li><a class="dropdown-item" href="#">Social Video</a></li>
+              <li><a class="dropdown-item" href="#">Product Video</a></li>
+              <li><a class="dropdown-item" href="#">Explainer</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="nav-link px-2">Onze werkwijze</a></li>
+          <li><a href="#" class="nav-link px-2">Portfolio</a></li>
+          <li><a href="#" class="nav-link px-2">Contact</a></li>
+        </ul>
+      </header>
+    </div>
+
+    <!-- HERO -->
+    <div class="container">
+      <h1>Jouw partner in videoproductie</h1>
+      <p>
+        Professionele en toepasbare videocontent om uw business tot zijn recht
+        te laten komen. Van bedrijfsfilm tot social media content tot
+        promotievideo's en alles daar tussenin - wij zorgen voor het beste
+        resultaat!
+      </p>
+    </div>
+
+    <!-- VIDEO POWER  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-6">Plaatje</div>
+        <div class="col-6">
+          <div class="row text-center justify-content-evenly">
+            <h1>De power van video</h1>
+            <div class="col-5 text-start">
+              <p>
+                Iedereen kan tegenwoordig video's maken en online zetten. Maar
+                niet iedereen heeft daar de tijd, de creativiteit of inzichten
+                voor om het effectief en professioneel je doelgroep mee aan te
+                spreken.
+              </p>
+
+              <p>
+                Wij zorgen voor toepasbare en impactvolle video's om uw
+                boodschap effectief over te brengen.
+              </p>
+            </div>
+            <div class="col-5 text-start">
+              <p>Wat kan video voor u betekenen?</p>
+              <ul class="">
+                <li>Enorme hoeveelheid informatie overbrengen</li>
+                <li>Sterke merkidentiteit overbrengen</li>
+                <li>Proffesionele uitstraling</li>
+                <li>Meer conversies</li>
+                <li>Sterke online aanwezigheid</li>
+                <li>Goede media is jaren later nog toepasbaar/bruikbaar</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FILM SOORTEN SOORT 1 -->
+    <!-- <div class="container">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card h-100">
+              <img
+                src="/resources/images/phone-499991_1920.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kennismaking</h5>
+                <p class="card-text">
+                  In dit gesprek bespreken we wat jullie doelen zijn met de
+                  video en hoe die het beste te behalen zijn.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <img
+                src="/resources/images/Sequence 01.00_00_01_24.Still001.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Concepting</h5>
+                <p class="card-text">This is a short card.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card h-100">
+              <img
+                src="/resources/images/phone-499991_1920.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kennismaking</h5>
+                <p class="card-text">
+                  In dit gesprek bespreken we wat jullie doelen zijn met de
+                  video en hoe die het beste te behalen zijn.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div> -->
+
+    <!-- FILM SOORTEN SOORT 2 -->
+  
+    <div class="wp-block-group__inner-container">
+      <div id="filmsoorten" class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-1.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 1 card 1"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 1 card 2"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 2</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-3.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 1 card 3"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 3</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-1.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 2 card 1"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 4</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 2 card 2"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 5</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-3.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 2 card 3"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 6</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/bootstrap-multiple-items-carousel-slide-3-card-1.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 3 card 1"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 7</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-2.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 3 card 2"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 8</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="img-wrapper">
+                <img
+                  decoding="async"
+                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-3.jpg"
+                  class="d-block w-100"
+                  alt="bootstrap multiple items carousel slide 3 card 3"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card title 9</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls6"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls6"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <p></p>
+    </div>
+
+    <!-- WERKWIJZE GROTER SCHERM  -->
+    <div class="container d-none d-sm-block d-lg-block d-md-block">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/resources/images/phone-499991_1920.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kennismaking</h5>
+              <p class="card-text">
+                In dit gesprek bespreken we wat jullie doelen zijn met de video
+                en hoe die het beste te behalen zijn.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/resources/images/Sequence 01.00_00_01_24.Still001.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Concepting</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/resources/images/Boonk 3.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Film opname</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/resources/images/Sequence 01.00_00_01_24.Still001.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Post productie</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/resources/images/phone-499991_1920.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Oplevering</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="/resources/images/Boonk 3.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gebruik</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WERKWIJZE ALLEEN KLEIN SCHERM -->
+      <div class="d-sm-none">
+        <div class="container">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <!-- EERSTE ITEM  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Kennismaking
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+              >
+                <div class="accordion-body">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="/resources/images/phone-499991_1920.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8 p-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Kennismaking</h5>
+                        <p class="card-text">
+                          In dit gesprek bespreken we wat jullie doelen zijn met
+                          de video en hoe die het beste te behalen zijn.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-body-secondary"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TWEEDE ITEM  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Concepting
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Verhaal, product of dienst. Wij ontwikkelen het concept dat
+                  het beste past bij jullie boodschap. Dat word vervolgens nog
+                  even telefonisch kortgesloten.
+                </div>
+              </div>
+            </div>
+            <!-- DERDE ITEM  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Opname
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Met hoogwaardige apparatuur zorgen wij voor topkwaliteit
+                  materiaal op een efficiënte en deskundige wijze.
+                </div>
+              </div>
+            </div>
+            <!-- VIERDE ITEM  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFour"
+                >
+                  Post-productie
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  In deze fase word alles tot 1 geheel getoverd. De montage van
+                  de beste shots, kleur correctie en sounddesign.
+                </div>
+              </div>
+            </div>
+            <!-- VIJFDE ITEM  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseFive"
+                >
+                  Oplevering
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  Het eindproduct word afgeleverd in de gewenste formaten en is
+                  klaar voor gebruik!
+                </div>
+              </div>
+            </div>
+            <!-- ZESDE ITEM  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseSix"
+                >
+                  Resultaat
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse colSix"
+              >
+                <div class="accordion-body">
+                  Het is zover. Je kan de video('s) inzetten en resultaten gaan
+                  boeken!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="morepercarosel.js">    </script>
   </body>
 </html>
