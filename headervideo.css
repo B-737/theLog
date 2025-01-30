@@ -28,13 +28,13 @@
   min-width: 100vw;
   min-height: 56.25vw; /* Maintains full coverage */
   transform: translate(-50%, -50%);
-  
+  pointer-events: none; /* ✅ Fix: Makes video not block clicks */
 }
 
 /* Keeps text & content on top */
 .hero .container {
   position: relative;
-  /* z-index: 2; */
+  z-index: 2;
 }
 
 /* Dark overlay effect */
@@ -49,13 +49,21 @@
   z-index: 1;
 }
 
+/* ✅ Fix: Ensure navbar is above the video */
+.navbar-custom {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 /* Fallback image for devices that do not support video */
 @media (pointer: coarse) and (hover: none) {
   .hero {
-      background: url('/resources/images/Boonk\ 3.png') black no-repeat center center scroll;
+    background: url('/resources/images/Boonk\ 3.png') black no-repeat center center scroll;
   }
 
   .hero .video-container {
-      display: none;
+    display: none;
   }
 }
