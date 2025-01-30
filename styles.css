@@ -25,8 +25,20 @@
     .breakoutImage {
       visibility: hidden;
     }
+ 
+      
+    }
+
+
+    /* Custom Transparent Navbar */
+    .navbar-custom {
+      background: rgba(0, 0, 0, 0.1); /* Black with 50% transparency */
+      backdrop-filter: blur(1px); /* Adds a slight blur effect */
+    }
+
+
   }
-}
+
 
 .navshadow {
   text-shadow: 5px 5px 10px black;
