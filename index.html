@@ -18,61 +18,97 @@
     ></script>
   
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="carouselmarkup.css"/>
+    <link rel="stylesheet" href="headervideo.css"/>
   </head>
   <body>
-    <!-- HEADER -->
-    <div class="container">
-      <header
-        class="align-items-center justify-content-center justify-content-md-between mb-4 border-bottom"
-      >
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-          <li class="nav-item dropdown align-self-center">
-            <button
-              class="btn dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Videoproductie
-            </button>
-            <ul class="dropdown-menu dropdown-menu">
-              <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
-              <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
-              <li><a class="dropdown-item" href="#">Aftermovie</a></li>
-              <li><a class="dropdown-item" href="#">Marketing</a></li>
-              <li><a class="dropdown-item" href="#">Social Video</a></li>
-              <li><a class="dropdown-item" href="#">Product Video</a></li>
-              <li><a class="dropdown-item" href="#">Explainer</a></li>
-            </ul>
-          </li>
 
-          <li><a href="#" class="nav-link px-2">Onze werkwijze</a></li>
-          <li><a href="#" class="nav-link px-2">Portfolio</a></li>
-          <li><a href="#" class="nav-link px-2">Contact</a></li>
-        </ul>
-      </header>
-    </div>
+   
 
     <!-- HERO -->
-    <div class="container">
-      <h1>Jouw partner in videoproductie</h1>
-      <p>
-        Professionele en toepasbare videocontent om uw business tot zijn recht
-        te laten komen. Van bedrijfsfilm tot social media content tot
-        promotievideo's en alles daar tussenin - wij zorgen voor het beste
-        resultaat!
-      </p>
+  
+    <div class="hero">
+      <div class="container text-light text-decoration-none">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="/resources/images/wolf.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              Pixelwolf Media
+            </a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav container d-flex align-items-center col-6 mb-2 mb-md-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Videoproductie
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
+                    <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
+                    <li><a class="dropdown-item" href="#">Aftermovie</a></li>
+                    <li><a class="dropdown-item" href="#">Marketing</a></li>
+                    <li><a class="dropdown-item" href="#">Social Video</a></li>
+                    <li><a class="dropdown-item" href="#">Product Video</a></li>
+                    <li><a class="dropdown-item" href="#">Explainer</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Werkwijze</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        
+      </div>
+
+      <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+      <div class="overlay"></div>
+    
+      <!-- The HTML5 video element that will create the background video on the header -->
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4" type="video/mp4">
+      </video>
+    
+      <!-- The header content -->
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3">Jouw partner in videoproductie</h1>
+            <p class="lead mb-0">Professionele en toepasbare videocontent om uw business tot zijn recht
+              te laten komen. Van bedrijfsfilm tot social media content tot
+              promotievideo's en alles daar tussenin - wij zorgen voor het beste
+              resultaat!</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+
     <!-- VIDEO POWER  -->
+     <div class="slightdarkbackgroundcolor">
+      
+
     <div class="container">
-      <div class="row">
-        <div class="col-6">Plaatje</div>
+      <div class="row py-5">
+        <div class="col-6">
+          <img class="card-img" src="/resources/images/Boonk 3.png" alt="">
+        </div>
         <div class="col-6">
           <div class="row text-center justify-content-evenly">
             <h1>De power van video</h1>
-            <div class="col-5 text-start">
+            <div class="col-6 text-start">
               <p>
                 Iedereen kan tegenwoordig video's maken en online zetten. Maar
                 niet iedereen heeft daar de tijd, de creativiteit of inzichten
@@ -85,7 +121,7 @@
                 boodschap effectief over te brengen.
               </p>
             </div>
-            <div class="col-5 text-start">
+            <div class="col-6 text-start">
               <p>Wat kan video voor u betekenen?</p>
               <ul class="">
                 <li>Enorme hoeveelheid informatie overbrengen</li>
@@ -100,263 +136,98 @@
         </div>
       </div>
     </div>
-    <!-- FILM SOORTEN SOORT 1 -->
-    <!-- <div class="container">
-      <div
-        id="carouselExampleControls"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card h-100">
-              <img
-                src="/resources/images/phone-499991_1920.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Kennismaking</h5>
-                <p class="card-text">
-                  In dit gesprek bespreken we wat jullie doelen zijn met de
-                  video en hoe die het beste te behalen zijn.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card h-100">
-              <img
-                src="/resources/images/Sequence 01.00_00_01_24.Still001.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Concepting</h5>
-                <p class="card-text">This is a short card.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card h-100">
-              <img
-                src="/resources/images/phone-499991_1920.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Kennismaking</h5>
-                <p class="card-text">
-                  In dit gesprek bespreken we wat jullie doelen zijn met de
-                  video en hoe die het beste te behalen zijn.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControls"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div> -->
 
-    <!-- FILM SOORTEN SOORT 2 -->
-  
-    <div class="wp-block-group__inner-container">
+
+
+    <!-- SOORTENVIDEOS -->
+
+    <div class="lightbackgroundcolor">
+    <div class="container d-none d-md-block d-lg-block">
       <div id="filmsoorten" class="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-1.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 1 card 1"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 1 card 2"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 2</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
+        <div class="carousel-inner py-5">
           <div class="carousel-item active">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-3.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 1 card 3"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 3</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Bedrijfsfilm</h5>
+                <p class="card-text">Een video waarin de boodschap van uw bedrijf effectief en overtuigend word overgebracht.</p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-1.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 2 card 1"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 4</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/socialmediacontent.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Social Media Content</h5>
+                <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 2 card 2"
-                />
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/aftermovie.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Aftermovie</h5>
+                <p class="card-text">Met de aftermovies die wij produceren van jouw event kan je het jaren later nog herbeleven en delen.</p>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 5</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Bedrijfsfilm</h5>
+                <p class="card-text">Een video waarin de boodschap van uw bedrijf effectief en overtuigend word overgebracht.</p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-3.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 2 card 3"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 6</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/socialmediacontent.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Social Media Content</h5>
+                <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/bootstrap-multiple-items-carousel-slide-3-card-1.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 3 card 1"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 7</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/aftermovie.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Aftermovie</h5>
+                <p class="card-text">Met de aftermovies die wij produceren van jouw event kan je het jaren later nog herbeleven en delen.</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-2.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 3 card 2"
-                />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 8</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Social Media Content</h5>
+                <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="card">
-              <div class="img-wrapper">
-                <img
-                  decoding="async"
-                  src="https://cdn-0.codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-3.jpg"
-                  class="d-block w-100"
-                  alt="bootstrap multiple items carousel slide 3 card 3"
-                />
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Social Media Content</h5>
+                <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Card title 9</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card text-bg-dark ">
+              <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card-img-overlay">
+                <h5 class="card-title">Social Media Content</h5>
+                <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
               </div>
             </div>
           </div>
@@ -382,6 +253,7 @@
       </div>
       <p></p>
     </div>
+  </div>
 
     <!-- WERKWIJZE GROTER SCHERM  -->
     <div class="container d-none d-sm-block d-lg-block d-md-block">
@@ -658,6 +530,38 @@
         </div>
       </div>
     </div>
+    <!-- FOOTER  -->
+
+<footer class="lightbackgroundcolor py-3">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Naar boven</a>
+      </li>
+      
+    
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Videoproductie
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
+          <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
+          <li><a class="dropdown-item" href="#">Aftermovie</a></li>
+          <li><a class="dropdown-item" href="#">Marketing</a></li>
+          <li><a class="dropdown-item" href="#">Social Video</a></li>
+          <li><a class="dropdown-item" href="#">Product Video</a></li>
+          <li><a class="dropdown-item" href="#">Explainer</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Werkwijze</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </footer>
+
 
     <script src="morepercarosel.js">    </script>
   </body>

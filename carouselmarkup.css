@@ -106,7 +106,7 @@
   }
   .card .img-wrapper {
       max-width: 100%;
-      height: 13em;
+      min-height: 13em;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -118,4 +118,10 @@
     .card .img-wrapper {
       height: 17em;
     }
+  }
+
+
+  .darkfilter{
+
+    filter:brightness(65%); /* You can try with filter to give darkness to each image */
   }
