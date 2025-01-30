@@ -1,0 +1,31 @@
+/* Ensure the video fills the screen */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Behind content */
+  }
+  
+  /* Make Vimeo video cover the full screen */
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Prevent interactions */
+  }
+  
+  /* Overlay for dark effect */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust transparency */
+    z-index: 0;
+  }
