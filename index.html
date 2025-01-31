@@ -3,32 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- website titel  -->
     <title>Pixelwolf</title>
+
+    <!-- BOOTSTRAP SHIT  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
 
+    <!-- STYLING SHIT  -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="carouselmarkup.css" />
     <link rel="stylesheet" href="headervideo.css" />
+    <link rel="stylesheet" href="filmproductiearcordion.css" />
+
+     
+
+    <!-- fontawesome ICONS -->
+    <script
+    src="https://kit.fontawesome.com/0efb4d4bb4.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    defer
+    src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+  ></script>
+
   </head>
   <body>
   
-      <!-- HERO -->
+      <!-- HERO (LANDING SECTION) -->
       <div class="hero">
         <div class="container text-light text-decoration-none">
           <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
             <div class="container">
-              <!-- Logo -->
+
+              <!-- Logo + naam-->
               <a class="navbar-brand" href="#">
                 <img
                   src="/resources/images/Logo Wit Hoofd.png"
@@ -39,6 +58,7 @@
                 />
                 Pixelwolf Media
               </a>
+
               <!-- Toggler for mobile view -->
               <button
                 class="navbar-toggler"
@@ -51,12 +71,15 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
+
               <!-- Navigation Items -->
               <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav w-100 d-flex justify-content-center">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
+
+                  <!-- die dropdown button in de navigatie -->
                   <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
@@ -89,9 +112,38 @@
                 </li>
               </ul>
             </div>
+            <div class="text-center align-items-center">
+              <button class="btn-sm btn btn-success" data-bs-toggle="modal" data-bs-target="#prijsaanvraag">
+                
+              <i class="fa-solid fa-file-invoice"></i> Prijsaanvraag
+            </button>
+
+            
+            </div>
           </div>
         </nav>
       </div>
+
+      <!-- Prijsaanvraag popup  -->
+       <!-- Modal -->
+<div class="modal fade " id="prijsaanvraag" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  data-bs-theme="dark" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <!-- intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
       <div class="overlay"></div>
@@ -101,7 +153,8 @@
         <iframe src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;playlist=cSkGcu6q-aE" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
     </div>
 
-    <!-- this one worked on the live server <iframe src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;playlist=cSkGcu6q-aE" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe> -->
+    <!-- NIET AANRAKEN !
+     this one worked on the live server <iframe src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;playlist=cSkGcu6q-aE" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe> -->
 
       <!-- The header content -->
       <div class="container h-100">
@@ -113,7 +166,7 @@
               recht te laten komen. Van bedrijfsfilm tot social media content
               tot promotievideo's en alles daar tussenin - wij zorgen voor het
               beste resultaat!
-            </p>
+                    </p>
           </div>
         </div>
       </div>
@@ -133,11 +186,11 @@
           <div class="col-lg-6 col-sm-12 p-5 order-sm-1 order-lg-2">
             <div class="row text-center justify-content-center text-light">
               <h1 class="pb-4"><strong>De power van video</strong></h1>
-              <div class="col-6 text-start">
+              <div class="col-lg-6 col-sm-12 text-start">
                 <p>Iedereen kan tegenwoordig video's maken en online zetten...</p>
                 <p>Wij zorgen voor toepasbare en impactvolle video's...</p>
               </div>
-              <div class="col-6 text-start">
+              <div class="col-lg-6 col-sm-12 text-start">
                 <p>Wat kan video voor u betekenen?</p>
                 <ul>
                   <li>Enorme hoeveelheid informatie overbrengen</li>
@@ -159,7 +212,7 @@
     
     <!-- SOORTENVIDEOS -->
     <div class="darkerbackgroundcolor">
-      <div class="container d-none d-md-block d-lg-block">
+      <div class="container d-md-block d-lg-block">
         <h1 class="pt-5 px-5"><strong>Aanbod</strong></h1>
         <div id="filmsoorten" class="carousel">
           <div class="carousel-inner py-5">
@@ -263,6 +316,62 @@
       </div>
     </div>
     
+
+
+    <!-- WERKWIJZE OPTIE 2  -->
+    <!-- work -->
+     <div class="container d-none">
+
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+            
+            id="title1" class="accordion-collapse show collapse" aria-labelledby="text1" data-bs-parent="#accordionFlushExample"
+            
+            
+            
+            
+            >
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse show collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"
+          
+          type="button" data-bs-toggle="clo" data-bs-target="#title1" aria-expanded="false" aria-controls="title1"
+          
+          
+          
+          >
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+      
+   
+     </div>
+  
 
     <!-- WERKWIJZE  -->
     <div class="container">
@@ -491,10 +600,78 @@
   <p>Samen kijken naar uw wat u voor ogen hebt, waarna wij het vanuit een film technisch perspectief gaan bekijken. U kijgt een overzicht van wat u zult krijgen, en hoe wij dat gaan behalen.</p>
   
   <p>Denk hierbij aan uw beschikbaarheid m.b.t. filmen, de post-productie periode en wat u krijgt opgelevered. Wel zo duidelijk!</p>
-
+</div>
+<!-- buttons  -->
+<div class="">
+  <button type="button" class="btn btn-light mb-5"   data-bs-toggle="modal"
+  data-bs-target="#contactModal" ><i class="fa-solid fa-message"></i> Contact</button>
 
 </div>
-<button type="button" class="btn btn-light  mb-5">Contact</button>
+
+<!-- modal start  -->
+     <!-- Modal -->
+     <div
+     class="modal fade"
+     id="contactModal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true"
+     >
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="card-model contactcard">
+           <img
+             class="card-img-top"
+             src="/resources/images/Sequence 01.00_00_01_24.Still001.jpg"
+             alt="Card image cap"
+           />
+           <div class="card-body">
+             <button
+               type="button"
+               class="btn-close"
+               data-bs-dismiss="modal"
+               aria-label="Close"
+             ></button>
+
+           <div class="container p-3 text-dark">
+            <h1 class="card-title">Contact</h1>
+            <p class="card-contact">
+              7 dagen per week beschikbaar via mail en WhatsApp.
+            </p>
+            Liever bellen? Van 09:00 en 17:00 ben ik
+            telefonisch bereikbaar.
+            <hr />
+            <p class="text-body-secondary"></p>
+            <p class="text-body-secondary">info@pixelwolf.nl</p>
+
+            <a
+              href="https://wa.me/+31683970714?text=Hi Tim, via pixelwolf.nl had ik je nummer verkregen. Zou jij: "
+              target="_blank"
+              class="link-success"
+
+              ><i class="fa-brands fa-whatsapp fa-2xl p-2"></i></a
+            >
+
+
+            <!-- merge -->
+            <!-- <a href="https://www.facebook.com/people/Houdt-van-Oud/pfbid02skyDPr8MQPcq7Zj9GooStCw52KuarmAHKsWjGrHhABcDz75e7Vu1UGoCZnMSXERFl/" class="link-primary"   target="_blank"> <i class="fa-brands fa-facebook fa-2xl p-2"></i></a> -->
+
+
+            <a href="mailto:info@pixelwolf.nl" class="link-secondary"
+              ><i class="fa-solid fa-envelope fa-2xl p-2"></i></a
+            >
+            <a href="tel:+31683970714" class="link-secondary"
+              ><i class="fa-solid fa-phone fa-2xl p-2"></i></a
+            >
+           </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+<!-- modal end  -->
+
+
       </div>
           
         </div>

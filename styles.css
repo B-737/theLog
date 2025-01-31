@@ -69,3 +69,23 @@
 	font-size: 105%;
 	color: rgb(238, 238, 238);
 }
+
+
+/* contact modal  */
+
+
+
+
+
+.card-model .btn-close {
+  float: right;
+  right: 1rem;
+  position: absolute;
+  
+}
+
+.contactcard{
+  color: red;
+  background-color: rgb(208, 208, 208);
+}
+
