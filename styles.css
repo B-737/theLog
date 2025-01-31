@@ -15,7 +15,7 @@
 }
 
 .backgroundcontact {
-    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
     url("/resources/images/Sequence\ 01.00_00_01_24.Still001.jpg");
   background-repeat: no-repeat;
   background-position: cover;
@@ -30,50 +30,34 @@
   background-size: 100vw;
   /* background-position: left 0%; */
   background-position-y: center;
-
 }
+
 @media (min-width: 992px) {
- 
-      
+}
 
+.backgroundcontact {
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
+    url("/resources/images/Sequence\ 01.00_00_01_24.Still001.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 110vw;
+  background-position: center 20%;
+}
 
-
-    }
-
-
-
-    .backgroundcontact {
-      background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
-        url("/resources/images/Sequence\ 01.00_00_01_24.Still001.jpg");
-      background-repeat: no-repeat;
-      background-position: cover;
-      background-size: 110vw;
-      background-position: center 20%;
-    }
-    
-
-    /* Custom Transparent Navbar */
-    .navbar-custom {
-      background: rgba(0, 0, 0, 0.1); /* Black with 50% transparency */
-      backdrop-filter: blur(1px); /* Adds a slight blur effect */
-    }
-
-
-  }
-
+/* Custom Transparent Navbar */
+.navbar-custom {
+  background: rgba(0, 0, 0, 0.1); /* Black with 50% transparency */
+  backdrop-filter: blur(1px); /* Adds a slight blur effect */
+}
 
 .navshadow {
   text-shadow: 5px 5px 10px black;
 }
 
-
 .meetdemanstyling {
-
-
-    font-size: 105%;
-    color: rgb(238, 238, 238);
+  font-size: 105%;
+  color: rgb(238, 238, 238);
 }
-
 
 /* contact modal  */
 
@@ -81,11 +65,9 @@
   float: right;
   right: 1rem;
   position: absolute;
-  
 }
 
-.contactcard{
+.contactcard {
   color: red;
   background-color: rgb(208, 208, 208);
 }
-
