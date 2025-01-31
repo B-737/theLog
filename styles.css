@@ -1,9 +1,9 @@
-.slightdarkbackgroundcolor {
-  background-color: rgb(230, 230, 230);
+.lighterbackgroundcolor {
+  background-color: rgba(243, 243, 243, 0.805);
 }
 
 .lightbackgroundcolor {
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(255, 255, 255);
 }
 
 .darkerbackgroundcolor {
@@ -12,6 +12,10 @@
 
 .darkestbackgroundcolor {
   background-color: rgb(32, 32, 32);
+}
+
+.logokleurPW {
+  color: #004c70;
 }
 
 /* ACHTERGROND IMAGES  */

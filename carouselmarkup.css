@@ -10,11 +10,12 @@
   
   .carousel-control-prev,
   .carousel-control-next {
-    background-color: #e1e1e1e0;
+    background-color: #aaaaaae0;
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
     top: 50%;
+    position: absolute;
     transform: translateY(-50%);
   }
   @media (min-width: 768px) {
@@ -47,4 +48,8 @@
   .darkfilter{
 
     filter:brightness(65%); /* You can try with filter to give darkness to each image */
+  }
+
+  .soortenvideos{
+    position: relative;
   }
