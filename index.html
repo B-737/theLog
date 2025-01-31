@@ -22,139 +22,120 @@
 
     <!-- STYLING SHIT  -->
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="herovid.css" />
     <link rel="stylesheet" href="carouselmarkup.css" />
-    <link rel="stylesheet" href="headervideo.css" />
-    <link rel="stylesheet" href="filmproductiearcordion.css" />
-
-     
 
     <!-- fontawesome ICONS -->
     <script
-    src="https://kit.fontawesome.com/0efb4d4bb4.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    defer
-    src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
-  ></script>
-
+      src="https://kit.fontawesome.com/0efb4d4bb4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
   </head>
   <body>
-  
-      <!-- HERO (LANDING SECTION) 1 -->
-      <div class="hero">
-        <div class="container text-light text-decoration-none">
-          <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
-            <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+      <div class="container">
+        <!-- Logo + naam-->
+        <a class="navbar-brand" href="#">
+          <img
+            src="/resources/images/Logo Wit Hoofd.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top mx-1"
+          />
+          Pixelwolf Media
+        </a>
 
-              <!-- Logo + naam-->
-              <a class="navbar-brand" href="#">
-                <img
-                  src="/resources/images/Logo Wit Hoofd.png"
-                  alt="Logo"
-                  width="30"
-                  height="30"
-                  class="d-inline-block align-text-top mx-1"
-                />
-                Pixelwolf Media
-              </a>
+        <!-- Toggler for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-              <!-- Toggler for mobile view -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+        <!-- Navigation Items -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav w-100 d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><strong>Home</strong></a
               >
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            </li>
 
-              <!-- Navigation Items -->
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <ul class="navbar-nav w-100 d-flex justify-content-center">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
-                  </li>
-
-                  <!-- die dropdown button in de navigatie -->
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdownMenuLink"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <strong></strong>Videoproductie
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
-                    <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
-                    <li><a class="dropdown-item" href="#">Aftermovie</a></li>
-                    <li><a class="dropdown-item" href="#">Marketing</a></li>
-                    <li><a class="dropdown-item" href="#">Social Video</a></li>
-                    <li><a class="dropdown-item" href="#">Product Video</a></li>
-                    <li><a class="dropdown-item" href="#">Explainer</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Werkwijze</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
+            <!-- die dropdown button in de navigatie -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong></strong>Videoproductie
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
+                <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
+                <li><a class="dropdown-item" href="#">Aftermovie</a></li>
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Social Video</a></li>
+                <li><a class="dropdown-item" href="#">Product Video</a></li>
+                <li><a class="dropdown-item" href="#">Explainer</a></li>
               </ul>
-            </div>
-            <div class="text-center align-items-center">
-              <button class="btn-sm btn btn-success" data-bs-toggle="modal" data-bs-target="#prijsaanvraag">
-                
-              <i class="fa-solid fa-file-invoice"></i> Prijsaanvraag
-            </button>
-
-            
-            </div>
-          </div>
-        </nav>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Werkwijze</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center align-items-center">
+          <button
+            class="btn-sm btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#prijsaanvraag"
+          >
+            <i class="fa-solid fa-file-invoice"></i> Prijsindicatie
+          </button>
+        </div>
       </div>
+    </nav>
 
-      <!-- Prijsaanvraag popup  -->
-       <!-- Modal -->
-<div class="modal fade " id="prijsaanvraag" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"  data-bs-theme="dark" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content ">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      <!-- intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <header>
+      <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
       <div class="overlay"></div>
 
-       <!-- YouTube Video Background -->
-       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;playlist=cSkGcu6q-aE" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-    </div>
-
-    <!-- NIET AANRAKEN !
-     this one worked on the live server <iframe src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;playlist=cSkGcu6q-aE" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe> -->
+      <!-- The HTML5 video element that will create the background video on the header -->
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source
+          src="/resources/images/Highlight reel old.mp4"
+          type="video/mp4"
+        />
+      </video>
 
       <!-- The header content -->
       <div class="container h-100">
@@ -166,26 +147,31 @@
               recht te laten komen. Van bedrijfsfilm tot social media content
               tot promotievideo's en alles daar tussenin - wij zorgen voor het
               beste resultaat!
-                    </p>
+            </p>
           </div>
         </div>
       </div>
-    </div>
-
+    </header>
 
     <!-- VIDEO POWER  -->
     <div class="darkestbackgroundcolor bg-image">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-6 col-sm-12 order-sm-2 order-lg-1 ">
-            <img class="img-fluid breakoutImage " src="/resources/images/Boonk 3.png" alt="" />
+          <div class="col-lg-4 col-sm-12 order-sm-2 order-lg-1">
+            <!-- <img
+              class="img-fluid breakoutImage"
+              src="/resources/images/Boonk 3.png"
+              alt=""
+            /> -->
           </div>
-          
+
           <div class="col-lg-6 col-sm-12 p-5 order-sm-1 order-lg-2">
             <div class="row text-center justify-content-center text-light">
               <h1 class="pb-4"><strong>De power van video</strong></h1>
               <div class="col-lg-6 col-sm-12 text-start">
-                <p>Iedereen kan tegenwoordig video's maken en online zetten...</p>
+                <p>
+                  Iedereen kan tegenwoordig video's maken en online zetten...
+                </p>
                 <p>Wij zorgen voor toepasbare en impactvolle video's...</p>
               </div>
               <div class="col-lg-6 col-sm-12 text-start">
@@ -205,9 +191,6 @@
       </div>
     </div>
 
-   
-
-    
     <!-- SOORTENVIDEOS -->
     <div class="darkerbackgroundcolor">
       <div class="container d-md-block d-lg-block">
@@ -215,97 +198,185 @@
         <div id="filmsoorten" class="carousel">
           <div class="carousel-inner py-5">
             <div class="carousel-item active">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/bedrijfsfilm.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Bedrijfsfilm</h5>
-                  <p class="card-text">Een video waarin de boodschap van uw bedrijf effectief en overtuigend word overgebracht.</p>
+                  <p class="card-text">
+                    Een video waarin de boodschap van uw bedrijf effectief en
+                    overtuigend word overgebracht.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/socialmediacontent.png" class="card-img darkfilter" alt="...">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/socialmediacontent.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Social Media Content</h5>
-                  <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
+                  <p class="card-text">
+                    De invloed van Social Media groeit met de dag. Wij creëren
+                    content special voor deze platforms om uw naamsbekendheid en
+                    internet verkeer te vergroten.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/aftermovie.png" class="card-img darkfilter" alt="...">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/aftermovie.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Aftermovie</h5>
-                  <p class="card-text">Met de aftermovies die wij produceren van jouw event kan je het jaren later nog herbeleven en delen.</p>
+                  <p class="card-text">
+                    Met de aftermovies die wij produceren van jouw event kan je
+                    het jaren later nog herbeleven en delen.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="carousel-item ">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+            <div class="carousel-item">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/bedrijfsfilm.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Bedrijfsfilm</h5>
-                  <p class="card-text">Een video waarin de boodschap van uw bedrijf effectief en overtuigend word overgebracht.</p>
+                  <p class="card-text">
+                    Een video waarin de boodschap van uw bedrijf effectief en
+                    overtuigend word overgebracht.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/socialmediacontent.png" class="card-img darkfilter" alt="...">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/socialmediacontent.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Social Media Content</h5>
-                  <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
-                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                  <p class="card-text">
+                    De invloed van Social Media groeit met de dag. Wij creëren
+                    content special voor deze platforms om uw naamsbekendheid en
+                    internet verkeer te vergroten.
+                  </p>
+                  <p class="card-text">
+                    <small>Last updated 3 mins ago</small>
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/aftermovie.png" class="card-img darkfilter" alt="...">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/aftermovie.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Aftermovie</h5>
-                  <p class="card-text">Met de aftermovies die wij produceren van jouw event kan je het jaren later nog herbeleven en delen.</p>
-                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                  <p class="card-text">
+                    Met de aftermovies die wij produceren van jouw event kan je
+                    het jaren later nog herbeleven en delen.
+                  </p>
+                  <p class="card-text">
+                    <small>Last updated 3 mins ago</small>
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/bedrijfsfilm.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Social Media Content</h5>
-                  <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
-                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                  <p class="card-text">
+                    De invloed van Social Media groeit met de dag. Wij creëren
+                    content special voor deze platforms om uw naamsbekendheid en
+                    internet verkeer te vergroten.
+                  </p>
+                  <p class="card-text">
+                    <small>Last updated 3 mins ago</small>
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/bedrijfsfilm.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Social Media Content</h5>
-                  <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
-                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                  <p class="card-text">
+                    De invloed van Social Media groeit met de dag. Wij creëren
+                    content special voor deze platforms om uw naamsbekendheid en
+                    internet verkeer te vergroten.
+                  </p>
+                  <p class="card-text">
+                    <small>Last updated 3 mins ago</small>
+                  </p>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card text-bg-dark ">
-                <img src="/resources/images/bedrijfsfilm.png" class="card-img darkfilter" alt="...">
+              <div class="card text-bg-dark">
+                <img
+                  src="/resources/images/bedrijfsfilm.png"
+                  class="card-img darkfilter"
+                  alt="..."
+                />
                 <div class="card-img-overlay">
                   <h5 class="card-title">Social Media Content</h5>
-                  <p class="card-text">De invloed van Social Media groeit met de dag. Wij creëren content special voor deze platforms om uw naamsbekendheid en internet verkeer te vergroten.</p>
-                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                  <p class="card-text">
+                    De invloed van Social Media groeit met de dag. Wij creëren
+                    content special voor deze platforms om uw naamsbekendheid en
+                    internet verkeer te vergroten.
+                  </p>
+                  <p class="card-text">
+                    <small>Last updated 3 mins ago</small>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls6"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls6"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -313,599 +384,382 @@
         <p></p>
       </div>
     </div>
-    
-
-
-    <!-- WERKWIJZE OPTIE 2  -->
-    <!-- work -->
-     <div class="container d-none">
-
-
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
-            
-            id="title1" class="accordion-collapse show collapse" aria-labelledby="text1" data-bs-parent="#accordionFlushExample"
-            
-            
-            
-            
-            >
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse show collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"
-          
-          type="button" data-bs-toggle="clo" data-bs-target="#title1" aria-expanded="false" aria-controls="title1"
-          
-          
-          
-          >
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-      </div>
-      
-   
-     </div>
-  
 
     <!-- WERKWIJZE  -->
-    <div class="container">
-      <h1 class="text-center pb-4">How we work</h1>
-      <!-- Card deck -->
-      <div class="d-flex flex-wrap justify-content-center">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <!-- Card -->
-          <div class="card mb-3">
-            <!--Card image-->
-            <div class="view overlay">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
-                alt="Card image cap"
-              />
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
+    <div class="">
+      <!-- achtergrondkleur -->
+      <div class="container">
+        <h1 class="text-center pb-4">How we work</h1>
+        <!-- Card deck -->
+        <div class="d-flex flex-wrap justify-content-center">
+          <div class="col-xs-12 col-sm-6 col-md-4 px-3 pb-3">
+            <!-- Card -->
+            <div class="card">
+              <!--Card image-->
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap"
+                />
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">1 Card title</h4>
-              <!--Text-->
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-              <button type="button" class="btn btn-light-blue btn-md">
-                Read more
-              </button>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">1 Card title</h4>
+                <!--Text-->
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">
+                  Read more
+                </button>
+              </div>
             </div>
+            <!-- Card -->
           </div>
-          <!-- Card -->
-        </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <!-- Card -->
-          <div class="card">
-            <!--Card image-->
-            <div class="view overlay">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
-                alt="Card image cap"
-              />
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 px-3 pb-3">
+            <!-- Card -->
+            <div class="card">
+              <!--Card image-->
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
+                  alt="Card image cap"
+                />
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">2 Card title</h4>
-              <!--Text-->
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-              <button type="button" class="btn btn-light-blue btn-md">
-                Read more
-              </button>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">2 Card title</h4>
+                <!--Text-->
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">
+                  Read more
+                </button>
+              </div>
             </div>
+            <!-- Card -->
           </div>
-          <!-- Card -->
-        </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <!-- Card -->
-          <div class="card mb-3">
-            <!--Card image-->
-            <div class="view overlay">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
-                alt="Card image cap"
-              />
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 px-3 pb-3">
+            <!-- Card -->
+            <div class="card mb-3">
+              <!--Card image-->
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
+                  alt="Card image cap"
+                />
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">3 Card title</h4>
-              <!--Text-->
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-              <button type="button" class="btn btn-light-blue btn-md">
-                Read more
-              </button>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">3 Card title</h4>
+                <!--Text-->
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">
+                  Read more
+                </button>
+              </div>
             </div>
+            <!-- Card -->
           </div>
-          <!-- Card -->
-        </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <!-- Card -->
-          <div class="card">
-            <!--Card image-->
-            <div class="view overlay">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
-                alt="Card image cap"
-              />
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 px-3 pb-3">
+            <!-- Card -->
+            <div class="card">
+              <!--Card image-->
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                  alt="Card image cap"
+                />
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">4 Card title</h4>
-              <!--Text-->
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-              <button type="button" class="btn btn-light-blue btn-md">
-                Read more
-              </button>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">4 Card title</h4>
+                <!--Text-->
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">
+                  Read more
+                </button>
+              </div>
             </div>
+            <!-- Card -->
           </div>
-          <!-- Card -->
-        </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4 card-group">
-          <!-- Card -->
-          <div class="card mb-4">
-            <!--Card image-->
-            <div class="view overlay">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
-                alt="Card image cap"
-              />
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 px-3 pb-3">
+            <!-- Card -->
+            <div class="card">
+              <!--Card image-->
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg"
+                  alt="Card image cap"
+                />
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">5 Card title</h4>
-              <!--Text-->
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-              <button type="button" class="btn btn-light-blue btn-md">
-                Read more
-              </button>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">5 Card title</h4>
+                <!--Text-->
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">
+                  Read more
+                </button>
+              </div>
             </div>
+            <!-- Card -->
           </div>
-          <!-- Card -->
-        </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <!-- Card -->
-          <div class="card mb-4">
-            <!--Card image-->
-            <div class="view overlay">
-              <img
-                class="card-img-top"
-                src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
-                alt="Card image cap"
-              />
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 px-3 pb-3">
+            <!-- Card -->
+            <div class="card">
+              <!--Card image-->
+              <div class="view overlay">
+                <img
+                  class="card-img-top"
+                  src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg"
+                  alt="Card image cap"
+                />
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
 
-            <!--Card content-->
-            <div class="card-body">
-              <!--Title-->
-              <h4 class="card-title">6 Card title</h4>
-              <!--Text-->
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-              <button type="button" class="btn btn-light-blue btn-md">
-                Read more
-              </button>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title">6 Card title</h4>
+                <!--Text-->
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-light-blue btn-md">
+                  Read more
+                </button>
+              </div>
             </div>
+            <!-- Card -->
           </div>
-          <!-- Card -->
         </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-4"></div>
+        <!-- Card deck -->
       </div>
-      <!-- Card deck -->
     </div>
 
-      <!-- WE ZIJN  -->
-       <div class="backgroundcontact">
-       <div class="container position-relative ">
-        <div class="row py-5 justify-content-center">
-          <div class="col-md-6 col-sm-12 py-5 meetdemanstyling ">
-<h1>
-  
-  <strong >
-    Meet the man
-  </strong>
-  
-</h1>    
+    <!-- WE ZIJN  -->
 
-<p>Behind the camera</p>
+    <div
+      class="row py-5 justify-content-center darkerbackgroundcolor backgroundcontact"
+    >
+      <div class="col-md-6 col-sm-12 py-5 meetdemanstyling text-light">
+        <h1>
+          <strong> Meet the man </strong>
+        </h1>
 
-<div class="row">
-  <p>Samen kijken naar uw wat u voor ogen hebt, waarna wij het vanuit een film technisch perspectief gaan bekijken. U kijgt een overzicht van wat u zult krijgen, en hoe wij dat gaan behalen.</p>
-  
-  <p>Denk hierbij aan uw beschikbaarheid m.b.t. filmen, de post-productie periode en wat u krijgt opgelevered. Wel zo duidelijk!</p>
-</div>
-<!-- buttons  -->
-<div class="">
-  <button type="button" class="btn btn-light mb-5"   data-bs-toggle="modal"
-  data-bs-target="#contactModal" ><i class="fa-solid fa-message"></i> Contact</button>
+        <p>Behind the camera</p>
 
-</div>
+        <div class="row">
+          <p>
+            Samen kijken naar uw wat u voor ogen hebt, waarna wij het vanuit een
+            film technisch perspectief gaan bekijken. U kijgt een overzicht van
+            wat u zult krijgen, en hoe wij dat gaan behalen.
+          </p>
 
-<!-- modal start  -->
-     <!-- Modal -->
-     <div
-     class="modal fade"
-     id="contactModal"
-     tabindex="-1"
-     aria-labelledby="exampleModalLabel"
-     aria-hidden="true"
-     >
-     <div class="modal-dialog modal-dialog-centered">
-       <div class="modal-content">
-         <div class="card-model contactcard">
-           <img
-             class="card-img-top"
-             src="/resources/images/Sequence 01.00_00_01_24.Still001.jpg"
-             alt="Card image cap"
-           />
-           <div class="card-body">
-             <button
-               type="button"
-               class="btn-close"
-               data-bs-dismiss="modal"
-               aria-label="Close"
-             ></button>
-
-           <div class="container p-3 text-dark">
-            <h1 class="card-title">Contact</h1>
-            <p class="card-contact">
-              7 dagen per week beschikbaar via mail en WhatsApp.
-            </p>
-            Liever bellen? Van 09:00 en 17:00 ben ik
-            telefonisch bereikbaar.
-            <hr />
-            <p class="text-body-secondary"></p>
-            <p class="text-body-secondary">info@pixelwolf.nl</p>
-
-            <a
-              href="https://wa.me/+31683970714?text=Hi Tim, via pixelwolf.nl had ik je nummer verkregen. Zou jij: "
-              target="_blank"
-              class="link-success"
-
-              ><i class="fa-brands fa-whatsapp fa-2xl p-2"></i></a
-            >
-
-
-            <!-- merge -->
-            <!-- <a href="https://www.facebook.com/people/Houdt-van-Oud/pfbid02skyDPr8MQPcq7Zj9GooStCw52KuarmAHKsWjGrHhABcDz75e7Vu1UGoCZnMSXERFl/" class="link-primary"   target="_blank"> <i class="fa-brands fa-facebook fa-2xl p-2"></i></a> -->
-
-
-            <a href="mailto:info@pixelwolf.nl" class="link-secondary"
-              ><i class="fa-solid fa-envelope fa-2xl p-2"></i></a
-            >
-            <a href="tel:+31683970714" class="link-secondary"
-              ><i class="fa-solid fa-phone fa-2xl p-2"></i></a
-            >
-           </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
-<!-- modal end  -->
-
-
-      </div>
-          
+          <p>
+            Denk hierbij aan uw beschikbaarheid m.b.t. filmen, de post-productie
+            periode en wat u krijgt opgelevered. Wel zo duidelijk!
+          </p>
         </div>
-       </div>
-      </div>
 
-      <!-- WERKWIJZE ALLEEN KLEIN SCHERM -->
-      <div class="d-none">
-        <div class="container">
-          <div class="accordion" id="accordionPanelsStayOpenExample">
-            <!-- EERSTE ITEM  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Kennismaking
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-              >
-                <div class="accordion-body">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img
-                        src="/resources/images/phone-499991_1920.jpg"
-                        class="img-fluid rounded-start"
-                        alt="..."
-                      />
-                    </div>
-                    <div class="col-md-8 p-3">
-                      <div class="card-body">
-                        <h5 class="card-title">Kennismaking</h5>
-                        <p class="card-text">
-                          In dit gesprek bespreken we wat jullie doelen zijn met
-                          de video en hoe die het beste te behalen zijn.
-                        </p>
-                        <p class="card-text">
-                          <small class="text-body-secondary"
-                            >Last updated 3 mins ago</small
-                          >
-                        </p>
-                      </div>
-                    </div>
+        <!-- buttons  -->
+        <div class="">
+          <button
+            type="button"
+            class="btn btn-light mb-5"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            <i class="fa-solid fa-message"></i> Contact
+          </button>
+        </div>
+
+        <!-- modal start  -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="contactModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="card-model contactcard">
+                <img
+                  class="card-img-top"
+                  src="/resources/images/Sequence 01.00_00_01_24.Still001.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+
+                  <div class="container p-3 text-dark">
+                    <h1 class="card-title">Contact</h1>
+                    <p class="card-contact">
+                      7 dagen per week beschikbaar via mail en WhatsApp.
+                    </p>
+                    Liever bellen? Van 09:00 en 17:00 ben ik
+                    telefonisch bereikbaar.
+                    <hr />
+                    <p class="text-body-secondary"></p>
+                    <p class="text-body-secondary">info@pixelwolf.nl</p>
+
+                    <a
+                      href="https://wa.me/+31683970714?text=Hi Tim, via pixelwolf.nl had ik je nummer verkregen. Zou jij: "
+                      target="_blank"
+                      class="link-success"
+                      ><i class="fa-brands fa-whatsapp fa-2xl p-2"></i
+                    ></a>
+
+                    <!-- merge -->
+                    <!-- <a href="https://www.facebook.com/people/Houdt-van-Oud/pfbid02skyDPr8MQPcq7Zj9GooStCw52KuarmAHKsWjGrHhABcDz75e7Vu1UGoCZnMSXERFl/" class="link-primary"   target="_blank"> <i class="fa-brands fa-facebook fa-2xl p-2"></i></a> -->
+
+                    <a href="mailto:info@pixelwolf.nl" class="link-secondary"
+                      ><i class="fa-solid fa-envelope fa-2xl p-2"></i
+                    ></a>
+                    <a href="tel:+31683970714" class="link-secondary"
+                      ><i class="fa-solid fa-phone fa-2xl p-2"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- TWEEDE ITEM  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseTwo"
-                >
-                  Concepting
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseTwo"
-                class="accordion-collapse collapse"
-              >
-                <div class="accordion-body">
-                  Verhaal, product of dienst. Wij ontwikkelen het concept dat
-                  het beste past bij jullie boodschap. Dat word vervolgens nog
-                  even telefonisch kortgesloten.
-                </div>
-              </div>
-            </div>
-            <!-- DERDE ITEM  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  Opname
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-              >
-                <div class="accordion-body">
-                  Met hoogwaardige apparatuur zorgen wij voor topkwaliteit
-                  materiaal op een efficiënte en deskundige wijze.
-                </div>
-              </div>
-            </div>
-            <!-- VIERDE ITEM  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseFour"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseFour"
-                >
-                  Post-productie
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseFour"
-                class="accordion-collapse collapse"
-              >
-                <div class="accordion-body">
-                  In deze fase word alles tot 1 geheel getoverd. De montage van
-                  de beste shots, kleur correctie en sounddesign.
-                </div>
-              </div>
-            </div>
-            <!-- VIJFDE ITEM  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseFive"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseFive"
-                >
-                  Oplevering
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseFive"
-                class="accordion-collapse collapse"
-              >
-                <div class="accordion-body">
-                  Het eindproduct word afgeleverd in de gewenste formaten en is
-                  klaar voor gebruik!
-                </div>
-              </div>
-            </div>
-            <!-- ZESDE ITEM  -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseSix"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseSix"
-                >
-                  Resultaat
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseSix"
-                class="accordion-collapse colSix"
-              >
-                <div class="accordion-body">
-                  Het is zover. Je kan de video('s) inzetten en resultaten gaan
-                  boeken!
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- FOOTER  -->
-     <div class="darkerbackgroundcolor">
 
-       
-       <div class="container">
-         <div class="row py-3">
-           <ul class="nav justify-content-center ">
-             <li class="nav-item">
-               <a class="nav-link text-dark text-decoration-none" aria-current="page" href="#">Naar boven</a>
-              </li>
-              
-              <li class="nav-item dropdown ">
-                <a
+    <!-- WERKWIJZE ALLEEN KLEIN SCHERM -->
+
+    <!-- FOOTER  -->
+    <div class="darkerbackgroundcolor">
+      <div class="container">
+        <div class="row py-3">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark text-decoration-none"
+                aria-current="page"
+                href="#"
+                >Naar boven</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
                 class="nav-link dropdown-toggle text-dark text-decoration-none"
                 href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-              Videoproductie
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
-              <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
-              <li><a class="dropdown-item" href="#">Aftermovie</a></li>
-              <li><a class="dropdown-item" href="#">Marketing</a></li>
-              <li><a class="dropdown-item" href="#">Social Video</a></li>
-              <li><a class="dropdown-item" href="#">Product Video</a></li>
-              <li><a class="dropdown-item" href="#">Explainer</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark text-decoration-none" href="#">Werkwijze</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark text-decoration-none" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+                Videoproductie
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
+                <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
+                <li><a class="dropdown-item" href="#">Aftermovie</a></li>
+                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                <li><a class="dropdown-item" href="#">Social Video</a></li>
+                <li><a class="dropdown-item" href="#">Product Video</a></li>
+                <li><a class="dropdown-item" href="#">Explainer</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-decoration-none" href="#"
+                >Werkwijze</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark text-decoration-none" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
 
-      <div class="row text-center pb-5">
-        <a class="navbar-brand" href="#">
-          <img
-          src="/resources/images/wolf.png"
-          alt=""
-          width="30"
-          height="24"
-          class="d-inline-block align-text-top"
-          />
-          Pixelwolf Media
-        </a>
+        <div class="row text-center pb-5">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/resources/images/Logo Wit Hoofd.png"
+              alt=""
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Pixelwolf Media
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-    
+
     <script src="morepercarosel.js"></script>
     <script src="powerimageadjust.js"></script>
   </body>

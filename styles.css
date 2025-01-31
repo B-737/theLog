@@ -15,7 +15,7 @@
 }
 
 .backgroundcontact {
-	background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
     url("/resources/images/Sequence\ 01.00_00_01_24.Still001.jpg");
   background-repeat: no-repeat;
   background-position: cover;
@@ -23,21 +23,25 @@
   background-position: center 20%;
 }
 
+.bg-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
+    url("/resources/images/Boonk 3.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  /* background-position: left 0%; */
+  background-position-y: center;
 
+}
 @media (min-width: 992px) {
-  .bg-image {
-    background-image: url("/resources/images/Boonk 3.png");
-    background-repeat: no-repeat;
-    background-size: 50vw;
-    background-position: left 0%;
-    background-position-y: center;
-
-    .breakoutImage {
-      visibility: hidden;
-    }
  
       
+
+
+
     }
+
+
+
     .backgroundcontact {
       background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
         url("/resources/images/Sequence\ 01.00_00_01_24.Still001.jpg");
@@ -66,16 +70,12 @@
 .meetdemanstyling {
 
 
-	font-size: 105%;
-	color: rgb(238, 238, 238);
+    font-size: 105%;
+    color: rgb(238, 238, 238);
 }
 
 
 /* contact modal  */
-
-
-
-
 
 .card-model .btn-close {
   float: right;
