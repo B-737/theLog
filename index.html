@@ -140,41 +140,54 @@
         />
       </video> -->
 
-      <video playsinline autoplay muted loop id="homeHeroVid">
+      <video playsinline muted loop id="homeHeroVid">
         <source
           src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4"
           type="video/mp4"
         />
       </video>
 
-      <script>
-        // Get the video element
-        var video = document.getElementById("homeHeroVid");
+      <!-- Fallback Play Button (only shown if video doesn't autoplay) -->
+      <button id="playButton" style="display: none">Play Video</button>
 
-        // Function to play the video if it's not already playing
-        function playVideoIfNotPlaying() {
-          // Check if the video has started playing
-          if (video.paused || video.currentTime === 0) {
-            video.play();
+      <script>
+        var video = document.getElementById("homeHeroVid");
+        var playButton = document.getElementById("playButton");
+
+        // Ensure video is muted initially, just in case
+        video.muted = true;
+
+        // Function to attempt video playback
+        function playVideo() {
+          // Try to play the video
+          if (video.paused) {
+            video.play().catch(function (error) {
+              console.log("Video autoplay failed:", error);
+              // If autoplay fails, show the play button
+              playButton.style.display = "block";
+            });
           }
         }
 
-        // Automatically attempt to play the video as soon as possible
-        video.play();
+        // Try playing the video when the page loads (use canplaythrough event to ensure video is ready)
+        video.addEventListener("canplaythrough", function () {
+          playVideo();
+        });
 
-        // Add event listener to play video if user interacts anywhere on the page
+        // Listen for any user interaction to play the video
         document.addEventListener("click", function () {
-          playVideoIfNotPlaying();
+          playVideo();
         });
 
-        // Optional: You can add more event listeners for other events like touchstart (for mobile)
+        // Touch event listener for mobile
         document.addEventListener("touchstart", function () {
-          playVideoIfNotPlaying();
+          playVideo();
         });
 
-        // In case the video hasn't started, call the play function directly on user interaction
-        video.addEventListener("play", function () {
-          // Video is playing, so no need to do anything further
+        // Fallback: If autoplay fails, clicking the play button should manually start the video
+        playButton.addEventListener("click", function () {
+          video.play();
+          playButton.style.display = "none"; // Hide the play button once video starts
         });
       </script>
 
