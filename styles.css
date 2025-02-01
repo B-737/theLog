@@ -71,7 +71,7 @@
 
 /* Custom Transparent Navbar */
 .navbar-custom {
-  background: rgba(0, 0, 0, 0.1); /* Black with 50% transparency */
+  background: rgba(0, 0, 0, 0.2); /* Black with 50% transparency */
   backdrop-filter: blur(1px); /* Adds a slight blur effect */
 }
 
@@ -79,10 +79,6 @@
   text-shadow: 5px 5px 10px black;
 }
 
-.meetdemanstyling {
-  font-size: 105%;
-  color: rgb(238, 238, 238);
-}
 
 /* contact modal  */
 
