@@ -36,7 +36,6 @@
     ></script>
   </head>
 
-
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
       <div class="container">
@@ -127,6 +126,7 @@
       <div class="overlay"></div>
 
       <!-- The HTML5 video element that will create the background video on the header -->
+      <!-- deze werkt goed op alle devices behalve tablet and mobile. autoplay werkt niet.       -->
       <!-- <video
         playsinline="playsinline"
         autoplay="autoplay"
@@ -140,50 +140,43 @@
         />
       </video> -->
 
-      <video
-    playsinline
-    autoplay
-    muted
-    loop
-    id="homeHeroVid"
->
-    <source
-        src="/resources/images/Highlight reel old.mp4"
-        type="video/mp4"
-    />
-</video>
+      <video playsinline autoplay muted loop id="homeHeroVid">
+        <source
+          src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4"
+          type="video/mp4"
+        />
+      </video>
 
-<script>
-    // Get the video element
-    var video = document.getElementById('homeHeroVid');
+      <script>
+        // Get the video element
+        var video = document.getElementById("homeHeroVid");
 
-    // Function to play the video if it's not already playing
-    function playVideoIfNotPlaying() {
-        // Check if the video has started playing
-        if (video.paused || video.currentTime === 0) {
+        // Function to play the video if it's not already playing
+        function playVideoIfNotPlaying() {
+          // Check if the video has started playing
+          if (video.paused || video.currentTime === 0) {
             video.play();
+          }
         }
-    }
 
-    // Automatically attempt to play the video as soon as possible
-    video.play();
+        // Automatically attempt to play the video as soon as possible
+        video.play();
 
-    // Add event listener to play video if user interacts anywhere on the page
-    document.addEventListener('click', function() {
-        playVideoIfNotPlaying();
-    });
+        // Add event listener to play video if user interacts anywhere on the page
+        document.addEventListener("click", function () {
+          playVideoIfNotPlaying();
+        });
 
-    // Optional: You can add more event listeners for other events like touchstart (for mobile)
-    document.addEventListener('touchstart', function() {
-        playVideoIfNotPlaying();
-    });
+        // Optional: You can add more event listeners for other events like touchstart (for mobile)
+        document.addEventListener("touchstart", function () {
+          playVideoIfNotPlaying();
+        });
 
-    // In case the video hasn't started, call the play function directly on user interaction
-    video.addEventListener('play', function() {
-        // Video is playing, so no need to do anything further
-    });
-</script>
-
+        // In case the video hasn't started, call the play function directly on user interaction
+        video.addEventListener("play", function () {
+          // Video is playing, so no need to do anything further
+        });
+      </script>
 
       <!-- The header content -->
       <div class="container h-100">
@@ -428,7 +421,7 @@
     <div class="">
       <!-- achtergrondkleur -->
       <div class="container py-5">
-        <h1 class=" ps-4 pb-4 display-5 logokleurPW">How we work</h1>
+        <h1 class="ps-4 pb-4 display-5 logokleurPW">How we work</h1>
         <!-- Card deck -->
         <div class="d-flex flex-wrap justify-content-center">
           <div class="col-xs-12 col-sm-6 col-md-4 px-3 pb-3">
