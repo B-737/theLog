@@ -101,3 +101,7 @@ html {
   color: red;
   background-color: rgb(208, 208, 208);
 }
+
+.subfont {
+  font-size: 1.5rem;
+}
