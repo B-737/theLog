@@ -27,8 +27,8 @@ header .container {
   z-index: 2;
 }
 
-.btn {
-  border: none;
+.btn-hero {
+  border-color: rgb(126, 126, 126);
 }
 
 /* dark layer above the whole hero  */

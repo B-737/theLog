@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="carouselmarkup.css" />
     <link rel="stylesheet" href="werkwijzestyles.css" />
+    <link rel="stylesheet" href="herovid.css" />
+    
 
     <!-- fontawesome ICONS -->
     <script
@@ -36,8 +38,9 @@
     ></script>
   </head>
 
+
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom-dark">
       <div class="container">
         <!-- Logo + naam-->
         <a class="navbar-brand" href="#">
@@ -71,7 +74,7 @@
         >
           <ul class="navbar-nav w-100 d-flex justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
+              <a class="nav-link active" aria-current="page" href="#"
                 ><strong>Home</strong></a
               >
             </li>
@@ -102,7 +105,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Werkwijze</a>
+              <a class="nav-link" href="/werkwijze.html">Werkwijze</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -191,27 +194,29 @@
         });
       </script>
 
-      <!-- The header content -->
-      <div class="container h-100">
-        <div class="d-flex h-100 align-items-center">
-          <div class="row text-light">
-            <h1 class="display-3">Onze werkwijze, jouw manier.</h1>
-            <p class="lead">
-              Om de resultaten te behalen die U graag wilt zien, passen wij ons
-              aan zodat uw onderneming of evenement voor staat. Wij geven
-              duidelijke verwachtingen, doormiddel van open communicatie.
-            </p>
-            <div class="d-flex flex-row">
-              <button class="btn btn-primary me-3 logokleurbackgroundcolor align-middle">Training</button>
-              <button class="btn btn-primary logokleurbackgroundcolor">Invoice <i class="fa-solid fa-file-invoice"></i></button>
-            </div>
-          </div>
-        </div>
+ <!-- The header content -->
+ <div class="container h-100">
+  <div class="d-flex h-100 align-items-center">
+    <div class="row text-light">
+      <h1 class="display-3">Onze werkwijzes, jouw manier.</h1>
+      <p class="lead">
+        Om de resultaten te behalen die U graag wilt zien, passen wij ons
+        aan zodat uw onderneming of evenement voor staat. Wij geven
+        duidelijke verwachtingen, doormiddel van open communicatie.
+      </p>
+      <div class="d-flex flex-row ">
+        <button class="btn btn-hero btn-primary btn-lg me-3 px-4 logokleurbackgroundcolor align-middle">Training</button>
+        <button class="btn btn-hero btn-primary px-4 btn-lg logokleurbackgroundcolor">Invoice <i class="fa-solid fa-file-invoice"></i></button>
       </div>
-    </header>
+    </div>
+  </div>
+</div>
+</header>
+
+
 
     <!-- twee colomn met text -->
-    <div class="backgroundcolorc">
+    <div class="backgroundcolor leftHeroSection">
       <div class="container py-5">
         <div class="row">
           <h1 class="display-5 pb-2">Jouw moeder, zijn titel.</h1>
@@ -246,7 +251,7 @@
         <div class="row pb-5">
           <h1 class="display-5 text-center">Drie images die altijd passen.</h1>
         </div>
-        <div class="row">
+        <div class="row px-5">
           <div class="col-lg-4 col-md-4 col-sm-12">
             <img
               class="img-fluid"
@@ -308,6 +313,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- random bootstrap hero  -->
+    <div class="px-4 py-5 my-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/resources/images/Logo Wit Hoofd.png" alt="" width="72" height="72">
+      <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
         </div>
       </div>
     </div>
@@ -423,5 +441,6 @@
 
     <script src="morepercarosel.js"></script>
     <script src="powerimageadjust.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>
