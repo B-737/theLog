@@ -11,8 +11,7 @@ header {
   transition: background-color 0.5s ease;
 }
 
-/* Style for the YouTube iframe */
-header iframe {
+header video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,13 +42,16 @@ header .overlay {
   z-index: 1;
 }
 
-/* Media Query for devices with coarse pointers and no hover functionality */
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
 @media (pointer: coarse) and (hover: none) {
   header {
     background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
   }
 
-  header iframe {
-    display: none; /* Hide iframe on devices that don't support video */
+  header video {
+    display: none;
   }
 }
