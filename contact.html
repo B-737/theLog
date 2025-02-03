@@ -144,26 +144,21 @@
       </div>
     </nav>
 
-    <header>
-      <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
-      <div class="overlay"></div>
 
-      <!-- The HTML5 video element that will create the background video on the header -->
-      <!-- deze werkt goed op alle devices behalve tablet and mobile. autoplay werkt niet.       -->
-      <!-- <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-        id="homeHeroVid"
-      >
-        <source
-          src="/resources/images/Highlight reel old.mp4"
-          type="video/mp4"
-        />
-      </video> -->
 
-   
+    <div class="video-background">
+      <div class="video-foreground">
+        <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  
+  <div id="vidtop-content">
+  <div class="vid-info">
+      
+    </div>
+  </div>
+
+<!--    
       <div class="video-container">
         <iframe id="homeHeroVid" 
           src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&mute=1&playsinline=1"
@@ -174,10 +169,10 @@
       </div>
       <button id="playButton" style="display: none;">Play Video</button>
       <div class="overlay"></div>
-      <div class="container">
-        <!-- Your content goes here -->
-      </div>
+      <div class="container"> -->
 
+        <!-- Your content goes here -->
+   
       <script>
         document.addEventListener("DOMContentLoaded", function () {
     var video = document.getElementById("homeHeroVid");
