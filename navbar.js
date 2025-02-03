@@ -14,11 +14,13 @@
       navbar.classList.add('navbar-light');
       navbar.classList.remove('navbar-custom-dark');
       navbar.classList.add('navbar-custom-light');
+      document.getElementById("logo").src="/resources/images/logoBluewhite.png"
     } else {
       navbar.classList.remove('navbar-light');
       navbar.classList.add('navbar-dark');
       navbar.classList.add('navbar-custom-dark');
       navbar.classList.remove('navbar-custom-light');
+      document.getElementById("logo").src="/resources/images/logoWhiteblue.png"
     }
   }
 
