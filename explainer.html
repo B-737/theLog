@@ -24,8 +24,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="carouselmarkup.css" />
     <link rel="stylesheet" href="werkwijzestyles.css" />
-    <link rel="stylesheet" href="herovid.css" />
-    
+    <link rel="stylesheet" href="herovidklein.css" />
 
     <!-- fontawesome ICONS -->
     <script
@@ -38,14 +37,15 @@
     ></script>
   </head>
 
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom-dark">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom-dark"
+    >
       <div class="container">
         <!-- Logo + naam-->
         <a class="navbar-brand" href="#">
           <img
-          id="logo"
+            id="logo"
             src="/resources/images/Logo Wit Hoofd.png"
             alt="Logo"
             width="30"
@@ -75,7 +75,7 @@
         >
           <ul class="navbar-nav w-100 d-flex justify-content-center">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="/index.html"
+              <a class="nav-link" aria-current="page" href="/index.html"
                 >Home</a
               >
             </li>
@@ -83,7 +83,7 @@
             <!-- dropdown button in navigatie -->
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link active dropdown-toggle"
                 href="/index.html"
                 id="navbarDropdownMenuLink"
                 role="button"
@@ -96,17 +96,36 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <li><a class="dropdown-item" href="#">Bedrijfsfilm</a></li>
-                <li><a class="dropdown-item" href="#">Promotiefilm</a></li>
-                <li><a class="dropdown-item" href="#">Aftermovie</a></li>
-                <li><a class="dropdown-item" href="#">Marketing</a></li>
-                <li><a class="dropdown-item" href="#">Social Video</a></li>
-                <li><a class="dropdown-item" href="#">Product Video</a></li>
-                <li><a class="dropdown-item" href="#">Explainer</a></li>
+                <li>
+                  <a class="dropdown-item active" href="bedrijfsfilm.html"
+                    >Bedrijfsfilm</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="promotiefilm.html"
+                    >Promotiefilm</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="marketing.html">Marketing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="socialvideo.htm"
+                    >Social Video</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="productvideo.html"
+                    >Product Video</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="explainer.html">Explainer</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/werkwijze.html">Werkwijze</a>
+              <a class="nav-link" href="/werkwijze.html">Werkwijze</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -195,26 +214,58 @@
         });
       </script>
 
- <!-- The header content -->
- <div class="container h-100">
-  <div class="d-flex h-100 align-items-center">
-    <div class="row text-light">
-      <h1 class="display-3">Onze werkwijzes, jouw manier.</h1>
-      <p class="lead">
-        Om de resultaten te behalen die U graag wilt zien, passen wij ons
-        aan zodat uw onderneming of evenement voor staat. Wij geven
-        duidelijke verwachtingen, doormiddel van open communicatie.
-      </p>
-      <div class="d-flex flex-row ">
-        <button class="btn btn-hero btn-primary btn-lg me-3 px-4 logokleurbackgroundcolor align-middle">Training</button>
-        <button class="btn btn-hero btn-primary px-4 btn-lg logokleurbackgroundcolor">Invoice <i class="fa-solid fa-file-invoice"></i></button>
+      <!-- The header content -->
+      <div class="container h-100">
+        <div class="d-flex h-100 align-items-center">
+          <div class="row text-light">
+            <h1 class="display-3">Explainer</h1>
+            <p class="lead">
+              Om de resultaten te behalen die U graag wilt zien, passen wij ons
+              aan zodat uw onderneming of evenement voor staat. Wij geven
+              duidelijke verwachtingen, doormiddel van open communicatie.
+            </p>
+            <div class="d-flex flex-row">
+              <button
+                class="btn btn-hero btn-primary btn-lg me-3 px-4 logokleurbackgroundcolor align-middle"
+              >
+                Training
+              </button>
+              <button
+                class="btn btn-hero btn-primary px-4 btn-lg logokleurbackgroundcolor"
+              >
+                Invoice <i class="fa-solid fa-file-invoice"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+    </header>
+
+    <!-- navigation to productievideo's  -->
+    <div class="text-center py-2">
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/bedrijfsfilm.html">Bedrijfsfilm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="promotiefilm.html">Promotiefilm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="socialmedia.html">Social Media</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="marketing.html">Marketing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="productvideo.html">Product video</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="true" href="explainer.html"
+            >Explainer</a
+          >
+        </li>
+      </ul>
     </div>
-  </div>
-</div>
-</header>
-
-
 
     <!-- twee colomn met text -->
     <div class="backgroundcolor leftHeroSection">
@@ -246,196 +297,6 @@
       </div>
     </div>
 
-    <!-- 3 colomnen met pictures -->
-    <div class="backgroundcolor darkerbackgroundcolor">
-      <div class="container py-5">
-        <div class="row pb-5">
-          <h1 class="display-5 text-center">Drie images die altijd passen.</h1>
-        </div>
-        <div class="row px-5">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img
-              class="img-fluid"
-              src="/resources/images/aftermovie.png"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img
-              class="img-fluid"
-              src="/resources/images/bedrijfsfilm.png"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img
-              class="img-fluid"
-              src="/resources/images/explainervideo.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- plaatje en text  -->
-    <div class="backgroundcolor lightbackgroundcolor">
-      <div class="container py-5">
-        <div class="row"></div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 col-sm-12 mb-3">
-            <img
-              class="img-fluid"
-              src="/resources/images/socialmediacontent.png"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <h1 class="display-5">Plaatje links tekst rechts</h1>
-            <p>
-              Contains copyrightable subject matter. Boeing also claims
-              copyright in this document as a compilation and/or collective
-              work. Boeing claims copyr.
-            </p>
-            <p>
-              Lighter egrght in each page of this document only to the extent
-              that the page contains copyrightable subject matter. Boeing also
-              claims copyright in this document as a compilation and/or
-              collective work
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- emty section  -->
-    <div class="backgroundcolor">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- random bootstrap hero  -->
-    <div class="px-4 py-5 my-5 text-center">
-      <img class="d-block mx-auto mb-4" src="/resources/images/logoWhiteblue.png" alt="" width="72" height="72">
-      <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- enkel text  -->
-    <div class="backgroundcolor logokleurbackgroundcolor">
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-lighter">
-            <h1 class="display-5 pb-2">Alleen maar tekst!</h1>
-            <p>
-              Contains copyrightable subject matter. Boeing also claims
-              copyright in this document as a compilation and/or collective
-              work. Boeing claims copyright in each page of this document only
-              to the extent that the page contains copyrightable subject matter.
-              Boeing also claims copyright in this document as a compilation
-              and/or collective work
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- text links en video rechts   -->
-    <div class="backgroundcolor lightbackgroundcolor">
-      <div class="container ">
-      
-        <div class="row align-items-center">
-       
-          <div class="col-lg-6 col-sm-12">
-            <h1 class="display-5">Plaatje links tekst rechts</h1>
-            <p>
-              Contains copyrightable subject matter. Boeing also claims
-              copyright in this document as a compilation and/or collective
-              work. Boeing claims copyr.
-            </p>
-            <p>
-              Lighter egrght in each page of this document only to the extent
-              that the page contains copyrightable subject matter. Boeing also
-              claims copyright in this document as a compilation and/or
-              collective work
-            </p>
-          </div>
-          <div class="col-lg-6 col-sm-12 mb-3">
-           
-            <iframe width="100%" height="550" src="https://player.vimeo.com/video/403530213" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                  </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- offset text met klein plaatje  -->
-    <div class="backgroundcolor darkerbackgroundcolor">
-      <div class="container py-5">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-12">
-            <h1 class="display-5 pb-2">Text boven, plaatje onder</h1>
-            <p>
-              Contains copyrightable subject matter. Boeing also claims
-              copyright in this document as a compilation and/or collective
-              work. Boeing claims copyright in each page of this document only
-              to the extent that the page contains copyrightable subject matter.
-              Boeing also claims copyright in this document as a compilation
-              and/or collective work
-            </p>
-          </div>
-          <div class="col-lg-1 col-sm-2 pt-2">
-            <img class="img-fluid" src="/resources/images/logoWhiteblue.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-     <!-- text links en video rechts   -->
-     <div class="backgroundcolor lightbackgroundcolor">
-      <div class="container ">
-                
-        <div class="row align-items-center py-5">
-          <h1 class="display-5 pb-4 text-center">Single video coolbeans</h1>
-       
-                  <div class="col-lg-12 col-sm-12 mb-3">
-           
-            <iframe width="100%" height="500" src="https://player.vimeo.com/video/403530213" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                  </div>
-        </div>
-      </div>
-    </div>
-
-      <!-- enkel text  -->
-    <div class="backgroundcolor logokleurbackgroundcolor">
-      <div class="container py-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-10 text-lighter">
-            <h1 class="display-5 pb-2">Alleen maar tekst!</h1>
-            <p>
-              Contains copyrightable subject matter. Boeing also claims
-              copyright in this document as a compilation and/or collective
-              work. Boeing claims copyright in each page of this document only
-              to the extent that the page contains copyrightable subject matter.
-              Boeing also claims copyright in this document as a compilation
-              and/or collective work
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- FOOTER  -->
     <div class="lightbackgroundcolor">
       <div class="container">
@@ -453,7 +314,7 @@
               <a
                 class="nav-link text-dark text-decoration-none"
                 aria-current="page"
-                href="#"
+                href="/index.html"
                 >Home</a
               >
             </li>
@@ -474,7 +335,7 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="bedrijfsfilm.html"
+                  <a class="dropdown-item" href="/bedrijfsfilm.html"
                     >Bedrijfsfilm</a
                   >
                 </li>
@@ -483,7 +344,6 @@
                     >Promotiefilm</a
                   >
                 </li>
-
                 <li>
                   <a class="dropdown-item" href="marketing.html">Marketing</a>
                 </li>
@@ -503,12 +363,16 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark text-decoration-none" href="/werkwijze.html"
+              <a
+                class="nav-link text-dark text-decoration-none"
+                href="werkwijze.html"
                 >Werkwijze</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark text-decoration-none" href="/contact.html"
+              <a
+                class="nav-link text-dark text-decoration-none"
+                href="contact.html"
                 >Contact</a
               >
             </li>
