@@ -144,11 +144,29 @@
       </div>
     </nav>
 
+<<<<<<< HEAD
     <header>
       <!-- This div is intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
       <div class="overlay"></div>
     
       <!-- The HTML5 video element that will create the background video on the header -->
+=======
+
+
+    <div class="video-background">
+      <div class="video-foreground">
+        <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  
+  <div id="vidtop-content">
+  <div class="vid-info">
+      
+    </div>
+  </div>
+
+<!--    
+>>>>>>> a3d572980d71a10a3881bd66fcf6fad75901a624
       <div class="video-container">
         <!-- Embed Vimeo video with autoplay query parameter -->
         <iframe id="homeHeroVid" src="https://player.vimeo.com/video/1051587029?autoplay=1&badge=0&autopause=0&player_id=0&app_id=58479" 
@@ -160,8 +178,94 @@
       </div>
     
       <div class="overlay"></div>
+<<<<<<< HEAD
       <div class="container">
         <!-- Your content goes here -->
+=======
+      <div class="container"> -->
+
+        <!-- Your content goes here -->
+   
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var video = document.getElementById("homeHeroVid");
+    var playButton = document.getElementById("playButton");
+  
+    // Ensure video is muted initially
+    video.muted = true;
+  
+    // Function to attempt video playback
+    function playVideo() {
+      // Try to play the video
+      if (video.paused) {
+        video.play().catch(function (error) {
+          console.log("Video autoplay failed:", error);
+          // If autoplay fails, show the play button
+          playButton.style.display = "block";
+        });
+      }
+    }
+  
+    // Check if the video is ready to be played
+    function setupVideo() {
+      // Try playing the video once the data is loaded
+      video.addEventListener("loadeddata", function () {
+        playVideo();
+      });
+  
+      // Use the 'canplaythrough' event to ensure video is ready to play
+      video.addEventListener("canplaythrough", function () {
+        playVideo();
+      });
+    }
+  
+    // Attempt to play the video on load
+    window.addEventListener("load", function () {
+      // Deferring play attempt to make sure everything is loaded properly
+      requestAnimationFrame(function () {
+        playVideo();
+      });
+    });
+  
+    // Handle user interaction (for mobile and tablet)
+    document.addEventListener("click", function () {
+      playVideo();
+    });
+  
+    document.addEventListener("touchstart", function () {
+      playVideo();
+    });
+  
+    // Fallback: Clicking the play button should manually start the video
+    playButton.addEventListener("click", function () {
+      video.play();
+      playButton.style.display = "none"; // Hide the play button once video starts
+    });
+  
+    // Set up the video playback after the DOM is ready
+    setupVideo();
+  });
+  
+      </script>
+
+      
+
+      <!-- The header content -->
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3">Jouw partner in videoproductie</h1>
+            <!-- Fallback Play Button (only shown if video doesn't autoplay) -->
+            <button id="playButton" style="display: none">Play Video</button>
+            <p class="lead mb-0">
+              Professionele en toepasbare videocontent om uw business tot zijn
+              recht te laten komen. Van bedrijfsfilm tot social media content
+              tot promotievideo's en alles daar tussenin - wij zorgen voor het
+              beste resultaat!
+            </p>
+          </div>
+        </div>
+>>>>>>> a3d572980d71a10a3881bd66fcf6fad75901a624
       </div>
     </header>
     
