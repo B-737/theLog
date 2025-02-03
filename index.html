@@ -170,9 +170,6 @@
         />
       </video>
 
-      <!-- Fallback Play Button (only shown if video doesn't autoplay) -->
-      <button id="playButton" style="display: none">Play Video</button>
-
       <script>
         var video = document.getElementById("homeHeroVid");
         var playButton = document.getElementById("playButton");
@@ -219,6 +216,8 @@
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
             <h1 class="display-3">Jouw partner in videoproductie</h1>
+            <!-- Fallback Play Button (only shown if video doesn't autoplay) -->
+            <button id="playButton" style="display: none">Play Video</button>
             <p class="lead mb-0">
               Professionele en toepasbare videocontent om uw business tot zijn
               recht te laten komen. Van bedrijfsfilm tot social media content
@@ -763,102 +762,107 @@
       </div>
     </div>
 
-  <!-- FOOTER  -->
-  <div class="lightbackgroundcolor">
-    <div class="container">
-      <div class="row py-3">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a
-              class="nav-link text-dark text-decoration-none"
-              aria-current="page"
-              href="#"
-              >Naar boven</a
-            >
-          </li>
-          <li class="nav-item active">
-            <a
-              class="nav-link text-dark text-decoration-none"
-              aria-current="page"
-              href="#"
-              >Home</a
-            >
-          </li>
+    <!-- FOOTER  -->
+    <div class="lightbackgroundcolor">
+      <div class="container">
+        <div class="row py-3">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark text-decoration-none"
+                aria-current="page"
+                href="#"
+                >Naar boven</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link text-dark text-decoration-none"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle text-dark text-decoration-none"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Videoproductie
-            </a>
-            <ul
-              class="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              <li>
-                <a class="dropdown-item" href="bedrijfsfilm.html"
-                  >Bedrijfsfilm</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="promotiefilm.html"
-                  >Promotiefilm</a
-                >
-              </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-dark text-decoration-none"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Videoproductie
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="bedrijfsfilm.html"
+                    >Bedrijfsfilm</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="promotiefilm.html"
+                    >Promotiefilm</a
+                  >
+                </li>
 
-              <li>
-                <a class="dropdown-item" href="marketing.html">Marketing</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="socialmedia.html"
-                  >Social Video</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="productvideo.html"
-                  >Product Video</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="explainer.html">Explainer</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark text-decoration-none" href="/werkwijze.html"
-              >Werkwijze</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark text-decoration-none" href="/contact.html"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </div>
+                <li>
+                  <a class="dropdown-item" href="marketing.html">Marketing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="socialmedia.html"
+                    >Social Video</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="productvideo.html"
+                    >Product Video</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="explainer.html">Explainer</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark text-decoration-none"
+                href="/werkwijze.html"
+                >Werkwijze</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark text-decoration-none"
+                href="/contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
 
-      <div class="row text-center pb-5">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/resources/images/logoBluewhite.png"
-            alt=""
-            width="24"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Pixelwolf Media
-        </a>
+        <div class="row text-center pb-5">
+          <a class="navbar-brand" href="#">
+            <img
+              src="/resources/images/logoBluewhite.png"
+              alt=""
+              width="24"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            Pixelwolf Media
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="morepercarosel.js"></script>
-  <script src="powerimageadjust.js"></script>
-  <script src="navbar.js"></script>
-</body>
+    <script src="morepercarosel.js"></script>
+    <script src="powerimageadjust.js"></script>
+    <script src="navbar.js"></script>
+    <script src="autoplay.js"></script>
+  </body>
 </html>
