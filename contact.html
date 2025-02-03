@@ -145,120 +145,26 @@
     </nav>
 
     <header>
-      <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+      <!-- This div is intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
       <div class="overlay"></div>
-
+    
       <!-- The HTML5 video element that will create the background video on the header -->
-      <!-- deze werkt goed op alle devices behalve tablet and mobile. autoplay werkt niet.       -->
-      <!-- <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-        id="homeHeroVid"
-      >
-        <source
-          src="/resources/images/Highlight reel old.mp4"
-          type="video/mp4"
-        />
-      </video> -->
-
-   
       <div class="video-container">
-        <iframe id="homeHeroVid" 
-          src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&mute=1&playsinline=1"
+        <!-- Embed Vimeo video with autoplay query parameter -->
+        <iframe id="homeHeroVid" src="https://player.vimeo.com/video/1051587029?autoplay=1&badge=0&autopause=0&player_id=0&app_id=58479" 
           frameborder="0" 
-          allow="autoplay; encrypted-media" 
-          allowfullscreen>
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+          style="position:absolute; top:0; left:0; width:100%; height:100%;" 
+          title="Highlight reel old">
         </iframe>
       </div>
-      <button id="playButton" style="display: none;">Play Video</button>
+    
       <div class="overlay"></div>
       <div class="container">
         <!-- Your content goes here -->
       </div>
-
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    var video = document.getElementById("homeHeroVid");
-    var playButton = document.getElementById("playButton");
-  
-    // Ensure video is muted initially
-    video.muted = true;
-  
-    // Function to attempt video playback
-    function playVideo() {
-      // Try to play the video
-      if (video.paused) {
-        video.play().catch(function (error) {
-          console.log("Video autoplay failed:", error);
-          // If autoplay fails, show the play button
-          playButton.style.display = "block";
-        });
-      }
-    }
-  
-    // Check if the video is ready to be played
-    function setupVideo() {
-      // Try playing the video once the data is loaded
-      video.addEventListener("loadeddata", function () {
-        playVideo();
-      });
-  
-      // Use the 'canplaythrough' event to ensure video is ready to play
-      video.addEventListener("canplaythrough", function () {
-        playVideo();
-      });
-    }
-  
-    // Attempt to play the video on load
-    window.addEventListener("load", function () {
-      // Deferring play attempt to make sure everything is loaded properly
-      requestAnimationFrame(function () {
-        playVideo();
-      });
-    });
-  
-    // Handle user interaction (for mobile and tablet)
-    document.addEventListener("click", function () {
-      playVideo();
-    });
-  
-    document.addEventListener("touchstart", function () {
-      playVideo();
-    });
-  
-    // Fallback: Clicking the play button should manually start the video
-    playButton.addEventListener("click", function () {
-      video.play();
-      playButton.style.display = "none"; // Hide the play button once video starts
-    });
-  
-    // Set up the video playback after the DOM is ready
-    setupVideo();
-  });
-  
-      </script>
-
-      
-
-      <!-- The header content -->
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white">
-            <h1 class="display-3">Jouw partner in videoproductie</h1>
-            <!-- Fallback Play Button (only shown if video doesn't autoplay) -->
-            <button id="playButton" style="display: none">Play Video</button>
-            <p class="lead mb-0">
-              Professionele en toepasbare videocontent om uw business tot zijn
-              recht te laten komen. Van bedrijfsfilm tot social media content
-              tot promotievideo's en alles daar tussenin - wij zorgen voor het
-              beste resultaat!
-            </p>
-          </div>
-        </div>
-      </div>
     </header>
+    
 
     <!-- VIDEO POWER  -->
     <div class="lightbackgroundcolor leftHeroSection">
