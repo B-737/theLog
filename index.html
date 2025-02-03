@@ -163,51 +163,77 @@
         />
       </video> -->
 
-      <video playsinline muted loop id="homeHeroVid">
+
+
+      <!-- this works nicely but doesn't play on mobile 
+          <video playsinline muted loop id="homeHeroVid">
         <source
           src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4"
           type="video/mp4"
         />
       </video>
+       -->
+   
+       <div id="videoContainer">
+        <iframe id="homeHeroVid"  
+          src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&mute=1&playsinline=1"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        <button id="playButton" style="display: none;">Play Video</button>
+      </div>
 
+      <!-- <div id="videoContainer">
+        <iframe id="homeHeroVid"  
+          src="https://www.youtube.com/embed/cSkGcu6q-aE?autoplay=1&mute=1&playsinline=1"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        <button id="playButton" style="display: none;">Play Video</button>
+      </div> -->
+      
       <script>
-        var video = document.getElementById("homeHeroVid");
-        var playButton = document.getElementById("playButton");
-
-        // Ensure video is muted initially, just in case
-        video.muted = true;
-
-        // Function to attempt video playback
-        function playVideo() {
-          // Try to play the video
-          if (video.paused) {
-            video.play().catch(function (error) {
-              console.log("Video autoplay failed:", error);
-              // If autoplay fails, show the play button
-              playButton.style.display = "block";
+        document.addEventListener("DOMContentLoaded", function () {
+          var iframe = document.getElementById("homeHeroVid");
+          var playButton = document.getElementById("playButton");
+      
+          // Function to attempt to play the video (YouTube iframe)
+          function playVideo() {
+            // Check if iframe source is already set to autoplay, if not, try to set it
+            if (!iframe.src.includes("autoplay=1")) {
+              // Try to update the iframe source to enable autoplay
+              iframe.src = iframe.src + "&autoplay=1";
+            }
+      
+            // If autoplay fails, show the play button (on desktop, or if autoplay doesn't work)
+            iframe.addEventListener("load", function () {
+              var isAutoplay = iframe.src.includes("autoplay=1");
+              if (!isAutoplay) {
+                playButton.style.display = "block";
+              }
             });
           }
-        }
-
-        // Try playing the video when the page loads (use canplaythrough event to ensure video is ready)
-        video.addEventListener("canplaythrough", function () {
-          playVideo();
-        });
-
-        // Listen for any user interaction to play the video
-        document.addEventListener("click", function () {
-          playVideo();
-        });
-
-        // Touch event listener for mobile
-        document.addEventListener("touchstart", function () {
-          playVideo();
-        });
-
-        // Fallback: If autoplay fails, clicking the play button should manually start the video
-        playButton.addEventListener("click", function () {
-          video.play();
-          playButton.style.display = "none"; // Hide the play button once video starts
+      
+          // Handle user interaction (for mobile and tablet)
+          document.addEventListener("click", function () {
+            playVideo();
+          });
+      
+          document.addEventListener("touchstart", function () {
+            playVideo();
+          });
+      
+          // Fallback: Clicking the play button should manually start the video
+          playButton.addEventListener("click", function () {
+            iframe.src = iframe.src + "&autoplay=1"; // Manually enable autoplay if user clicks play
+            playButton.style.display = "none"; // Hide the play button once video starts
+          });
+      
+          // Attempt to play the video on load
+          window.addEventListener("load", function () {
+            // Give some time to load and attempt to start the video
+            setTimeout(function () {
+              playVideo();
+            }, 500);
+          });
         });
       </script>
 

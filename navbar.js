@@ -26,3 +26,13 @@
 
   // Add the scroll event listener
   window.addEventListener('scroll', handleScroll);
+
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) {
+      playVideo();
+    }
+  });
+  
+  window.addEventListener("focus", function () {
+    playVideo();
+  });
