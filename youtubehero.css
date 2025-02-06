@@ -1,17 +1,58 @@
-* { box-sizing: border-box; }
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
-.video-foreground,
-.video-background iframe {
+
+.navbar {
+  transition: background-color 0.5s ease;
+}
+
+/* Create a container with a 16:9 aspect ratio */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+/* Position iframe video within the container */
+#homeHeroVid {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
+}
+
+/* Overlay */
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+/* Media Query for devices with coarse pointers and no hover functionality */
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+=======
   pointer-events: none;
 }
 #vidtop-content {
@@ -34,3 +75,4 @@
 @media all and (max-width: 500px) {
 .vid-info .acronym { display: none; }
 }
+>>>>>>> a3d572980d71a10a3881bd66fcf6fad75901a624
