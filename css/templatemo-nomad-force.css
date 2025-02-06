@@ -19,9 +19,9 @@ https://templatemo.com/tm-567-nomad-force
   --title-color:                  #565758;
   --p-color:                      #717275;
 
-  --body-font-family:           'Noto Sans JP', sans-serif;
+  /* --body-font-family:           'Noto Sans JP', sans-serif; */
 
-  --h1-font-size:               72px;
+  /* --h1-font-size:               72px;
   --h2-font-size:               42px;
   --h3-font-size:               36px;
   --h4-font-size:               32px;
@@ -34,7 +34,7 @@ https://templatemo.com/tm-567-nomad-force
   --font-weight-light:          300;
   --font-weight-normal:         400;
   --font-weight-bold:           700;
-  --font-weight-black:          900;
+  --font-weight-black:          900; */
 }
 
 body,
@@ -44,7 +44,7 @@ html {
 
 body {
     background: var(--white-color);
-    font-family: var(--body-font-family);    
+    /* font-family: var(--body-font-family);     */
     position: relative;
 }
 
@@ -52,7 +52,7 @@ body {
   TYPOGRAPHY               
 -----------------------------------------*/
 
-h2,
+/* h2,
 h3,
 h4,
 h5,
@@ -109,9 +109,9 @@ p {
 
 .text-secondary-white-color {
   color: var(--text-secondary-white-color);
-}
+} */
 
-a, 
+/* a, 
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -135,7 +135,7 @@ a:hover {
   border-bottom: 2px solid var(--white-color);
   color: var(--white-color);
   padding-bottom: 4px;
-}
+} */
 
 .videoWrapper {
   position: relative;
@@ -153,7 +153,13 @@ a:hover {
 }
 
 .overlay {
-  background: linear-gradient(to top, #000, transparent 50%);
+  /* background: linear-gradient(to top, #000, transparent 100%); */
+
+  /* solid color overlay  */
+  background:rgba(0, 0, 0, 0.6);
+
+  /* boven en onder kleuren en opacity separate  */
+  /* background: linear-gradient(0.50turn, #00000085 ,#000000); */
   position: absolute;
   top: 0;
   right: 0;
@@ -200,15 +206,15 @@ a:hover {
   color: var(--white-color);
 }
 
-b,
+/* b,
 strong {
   font-weight: var(--font-weight-bold);
-}
+} */
 
 /*---------------------------------------
   NAVIGATION               
 -----------------------------------------*/
-
+/* 
 .navbar {
   z-index: 9;
   right: 0;
@@ -340,7 +346,7 @@ strong {
 
 .navbar-toggler .navbar-toggler-icon:after {
   top: 8px;
-}
+} */
 
 /*---------------------------------------
   HERO              
@@ -591,7 +597,7 @@ strong {
 /*---------------------------------------
   SITE FOOTER               
 -----------------------------------------*/
-.site-footer {
+/* .site-footer {
   background: var(--dark-color);
   padding-top: 4.5rem;
   padding-bottom: 2.5rem;
@@ -610,7 +616,7 @@ strong {
 .copyright-text {
   color: rgba(255, 255, 255, 0.45);
   font-size: var(--copyright-text-font-size);
-}
+} */
 
 /*---------------------------------------
   SOCIAL ICON               
