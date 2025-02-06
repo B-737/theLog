@@ -11,7 +11,7 @@ https://templatemo.com/tm-567-nomad-force
 -----------------------------------------*/
 :root {
   --white-color:                  #FFFFFF;
-  --primary-color:                #ffc107;
+  --primary-color:               #004c70;
   --section-bg-color:             #f9f9f9;
   --dark-color:                   #000000;
   --grey-color:                   #fcfeff;
@@ -153,7 +153,7 @@ a:hover {
 }
 
 .overlay {
-  background: linear-gradient(to top, #000, transparent 90%);
+  background: linear-gradient(to top, #000, transparent 50%);
   position: absolute;
   top: 0;
   right: 0;
