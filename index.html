@@ -7,7 +7,15 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Nomad Force HTML Bootstrap 5 Template</title>
+    <title>Pixelwolf Media</title>
+
+    <!-- carousel -->
+    <!-- MDB CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/mdb-ui-kit/css/mdb.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- MDB JS -->
+    <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit/js/mdb.min.js"></script>
 
     <!-- fontawesome ICONS -->
     <script
@@ -314,14 +322,20 @@ https://templatemo.com/tm-567-nomad-force
         </div>
       </section> -->
 
-      <section class="section-padding pb-0 leftHeroSection" id="about ">
-        <div class="container mb-5 pb-lg-5" >
+      <!-- <section class="section-padding pb-0 leftHeroSection" id="about ">
+        <div class="container mb-5 pb-lg-5">
           <div class="d-flex">
             <div class="flex-fill pt-4 pe-5">
-              <i class="fa-solid fa-bolt waaromPW" data-aos="fade-up" data-aos-delay="300"></i>
+              <i
+                class="fa-solid fa-bolt waaromPW"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              ></i>
             </div>
             <div class="flex-fill text-start">
-              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="300">The power van video</h2>
+              <h2 class="mb-3" data-aos="fade-up" data-aos-delay="300">
+                The power van video
+              </h2>
               <p class="me-4" data-aos="fade-up" data-aos-delay="800">
                 Nu consumenten steeds meer gewend raken aan visuele inhoud, is
                 Video een onmisbaar onderdeel geworden van moderne
@@ -330,35 +344,202 @@ https://templatemo.com/tm-567-nomad-force
               </p>
             </div>
           </div>
-
-          <div class="row">
-            <!-- <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
-              <p data-aos="fade-up" data-aos-delay="500">
-                - Video is een populair medium <br />
-                - 30 seconden zeggen meer dan pagina's met tekst
-                <br />
-                - Verhoogt online zichtbaarheid
-                <br />
-                - Sterkere merk identiteit
-                <br />
-                - Vaker in te zetten
-                <br />
-                - Social Media groeit en boost internetverkeer
-                <br />
-                - Bijna iedereen kijkt dagelijks video's online, dus ook jouw
-                doelgroep
-              </p>
-            </div>
-            <div class="col-lg-6 col-12 mt-lg-3 mb-lg-5">
-              <img
-                class="img-fluid"
-                src="/images/elena-rabkina-eVVzwsNhNf4-unsplash.jpg"
-                alt=""
-              />
-            </div> -->
-          </div>
         </div>
+      </section> -->
 
+      <section class="section-padding h-10">
+        <div class="container">
+          <div class="container mb-5 pb-lg-5">
+            <div class="d-flex">
+              <div class="flex-fill pt-4 pe-5">
+                <i
+                  class="fa-solid fa-bolt waaromPW"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                ></i>
+              </div>
+              <div class="flex-fill text-start">
+                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="300">
+                  Wij gaan hard
+                </h2>
+                <p class="me-4" data-aos="fade-up" data-aos-delay="800">
+                  Onze vorige klanten waren tevreden met de footage, klik op de Full Video button om de gehele footage te bekijken, koekwous.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel wrapper -->
+          <div
+            id="carouselVideoExample"
+            data-mdb-carousel-init
+            class="carousel slide carousel-fade"
+            data-mdb-ride="carousel"
+          >
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+              <button
+                data-mdb-button-init
+                type="button"
+                data-mdb-target="#carouselVideoExample"
+                data-mdb-slide-to="0"
+                class="active btn btn-secondary"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                data-mdb-button-init
+                type="button"
+                class="btn btn-secondary"
+                data-mdb-target="#carouselVideoExample"
+                data-mdb-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                data-mdb-button-init
+                type="button"
+                class="btn btn-secondary"
+                data-mdb-target="#carouselVideoExample"
+                data-mdb-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <!-- Inner -->
+            <div class="carousel-inner trailers">
+              <!-- Single item -->
+              <div class="carousel-item active">
+                <video class="img-fluid" autoplay loop muted>
+                  <source
+                    src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Bos video preview</h5>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Full video
+                  </button>
+                </div>
+              </div>
+
+              <!-- Tweede item -->
+              <div class="carousel-item">
+                <video class="img-fluid" autoplay loop muted>
+                  <source
+                    src="https://mdbcdn.b-cdn.net/img/video/forest.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Bos video preview</h5>
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Full video
+                  </button>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal modal-dark fade"
+                data-bs-theme="dark"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-xl modal-fullscreen modal-dialog-centered"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Modal title
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div
+                      class="modal-body align-items-center justify-content-center"
+                    >
+                      <video class="img-fluid" autoplay loop muted>
+                        <source
+                          src="https://mdbcdn.b-cdn.net/img/video/forest.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Single item -->
+              <div class="carousel-item">
+                <video class="img-fluid" autoplay loop muted>
+                  <source
+                    src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div class="carousel-caption trailer-caption d-none d-md-block">
+                  <h5>Dikke steen jongeh PREVIEW</h5>
+                  <button class="btn btn-success">Full Video</button>
+                </div>
+              </div>
+            </div>
+            <!-- Inner -->
+
+            <!-- Controls -->
+            <button
+              data-mdb-button-init
+              class="carousel-control-prev"
+              type="button"
+              data-mdb-target="#carouselVideoExample"
+              data-mdb-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              data-mdb-button-init
+              class="carousel-control-next"
+              type="button"
+              data-mdb-target="#carouselVideoExample"
+              data-mdb-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- Carousel wrapper -->
+
+          <!-- container div  -->
+        </div>
+      </section>
+
+      <!-- 30 seconden video  -->
+      <section class="section-padding">
         <div class="container-fluid">
           <div class="row">
             <div class="d-flex col-lg-6 col-12 p-0">
