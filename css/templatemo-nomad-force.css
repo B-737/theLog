@@ -761,6 +761,35 @@ strong {
   font-size: 3rem;
 }
 
-.trailers{
-  max-height: 70vh;
+.trailer-container {
+  position: relative;
+  padding-bottom: 56.25%;
 }
+
+.trailer-container-half {
+  position: relative;
+  padding-bottom: 28%;
+}
+
+.trailer-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Initially hide the controls */
+.trailer-vid {
+  /* position: relative; */
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+/* When the iframe is hovered, show the controls */
+.trailer-vid:hover {
+  opacity: 1;
+}
+
+/* Hide Vimeo player controls by default by using the URL parameters */
+/* Controls hidden in URL: title=0, byline=0, portrait=0 */
