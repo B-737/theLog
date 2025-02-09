@@ -563,6 +563,10 @@ strong {
   background-color: #e7e7e7;
 }
 
+.section-pw{
+  background-color: #004c70;
+}
+
 .section-dark{
   
   background:  var(--section-dark);
@@ -776,7 +780,7 @@ strong {
 
 .trailer-container-half {
   position: relative;
-  padding-bottom: 30%;
+  padding-bottom: 56.25%;
 }
 
 .trailer-vid {
