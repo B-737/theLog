@@ -10,31 +10,32 @@ https://templatemo.com/tm-567-nomad-force
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #FFFFFF;
-  --primary-color:               #004c70;
-  --section-bg-color:             #f9f9f9;
-  --dark-color:                   #000000;
-  --grey-color:                   #fcfeff;
-  --text-secondary-white-color:   rgba(255, 255, 255, 0.98);
-  --title-color:                  #565758;
-  --p-color:                      #717275;
+  --white-color: #ffffff;
+  --primary-color: #ffc107;
+  --section-bg-color: #f9f9f9;
+  --dark-color: #000000;
+  --grey-color: #fcfeff;
+  --text-secondary-white-color: rgba(255, 255, 255, 0.98);
+  --title-color: #565758;
+  --p-color: #353535;
+  --p-color-light: #d0d0d0;
 
-  /* --body-font-family:           'Noto Sans JP', sans-serif; */
+  --body-font-family: sans-serif;
 
-  /* --h1-font-size:               72px;
-  --h2-font-size:               42px;
-  --h3-font-size:               36px;
-  --h4-font-size:               32px;
-  --h5-font-size:               24px;
-  --h6-font-size:               22px;
-  --p-font-size:                20px;
-  --copyright-text-font-size:   14px;
-  --custom-link-font-size:      12px;
+  --h1-font-size: 72px;
+  --h2-font-size: 42px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 20px;
+  --copyright-text-font-size: 14px;
+  --custom-link-font-size: 12px;
 
-  --font-weight-light:          300;
-  --font-weight-normal:         400;
-  --font-weight-bold:           700;
-  --font-weight-black:          900; */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
 }
 
 body,
@@ -43,16 +44,16 @@ html {
 }
 
 body {
-    background: var(--white-color);
-    /* font-family: var(--body-font-family);     */
-    position: relative;
+  background: var(--white-color);
+  font-family: var(--body-font-family);
+  position: relative;
 }
 
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
 
-/* h2,
+h2,
 h3,
 h4,
 h5,
@@ -107,11 +108,19 @@ p {
   letter-spacing: 0.5px;
 }
 
+.p-color-light{
+  color: var(--p-color-light);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+  letter-spacing: 0.5px;
+
+}
+
 .text-secondary-white-color {
   color: var(--text-secondary-white-color);
-} */
+}
 
-/* a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -135,7 +144,7 @@ a:hover {
   border-bottom: 2px solid var(--white-color);
   color: var(--white-color);
   padding-bottom: 4px;
-} */
+}
 
 .videoWrapper {
   position: relative;
@@ -153,13 +162,8 @@ a:hover {
 }
 
 .overlay {
-  /* background: linear-gradient(to top, #000, transparent 100%); */
-
-  /* solid color overlay  */
-  background:rgba(0, 0, 0, 0.6);
-
-  /* boven en onder kleuren en opacity separate  */
-  /* background: linear-gradient(0.50turn, #00000085 ,#000000); */
+  /* background: linear-gradient(to top, #000, transparent 90%); */
+  background-color: #0000009b;
   position: absolute;
   top: 0;
   right: 0;
@@ -179,7 +183,7 @@ a:hover {
   overflow: hidden;
   z-index: 1;
   display: inline-block;
-  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .custom-link::after {
@@ -191,7 +195,7 @@ a:hover {
   left: auto;
   right: 0;
   z-index: -1;
-  transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   background: currentColor;
 }
 
@@ -206,16 +210,16 @@ a:hover {
   color: var(--white-color);
 }
 
-/* b,
+b,
 strong {
   font-weight: var(--font-weight-bold);
-} */
+}
 
 /*---------------------------------------
   NAVIGATION               
 -----------------------------------------*/
-/* 
-.navbar {
+
+/* .navbar {
   z-index: 9;
   right: 0;
   left: 0;
@@ -405,7 +409,7 @@ strong {
   padding: 22px 32px 32px 32px;
 }
 
-.carousel-control-next, 
+.carousel-control-next,
 .carousel-control-prev {
   top: auto;
   bottom: 2.5rem;
@@ -416,7 +420,7 @@ strong {
   left: auto;
 }
 
-.carousel-control-next-icon, 
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: var(--dark-color);
   background-size: 50% 50%;
@@ -489,7 +493,7 @@ strong {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  transition: all .3s cubic-bezier(.645,.045,.355,1);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding-bottom: 4px;
   height: 100%;
 }
@@ -503,7 +507,7 @@ strong {
   left: auto;
   right: 0;
   z-index: -1;
-  transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
+  transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   background: #198754;
 }
 
@@ -555,6 +559,10 @@ strong {
   padding-bottom: 7rem;
 }
 
+.section-gray {
+  background-color: #e7e7e7;
+}
+
 /*---------------------------------------
   CONTACT              
 -----------------------------------------*/
@@ -569,7 +577,7 @@ strong {
   padding-bottom: 12px;
 }
 
-.contact-form button[type='submit'] {
+.contact-form button[type="submit"] {
   background: var(--dark-color);
   border: none;
   border-radius: 100px;
@@ -580,7 +588,7 @@ strong {
   transition: all 0.6s ease-out;
 }
 
-.contact-form button[type='submit']:hover {
+.contact-form button[type="submit"]:hover {
   background: var(--primary-color);
 }
 
@@ -597,7 +605,7 @@ strong {
 /*---------------------------------------
   SITE FOOTER               
 -----------------------------------------*/
-/* .site-footer {
+.site-footer {
   background: var(--dark-color);
   padding-top: 4.5rem;
   padding-bottom: 2.5rem;
@@ -616,7 +624,7 @@ strong {
 .copyright-text {
   color: rgba(255, 255, 255, 0.45);
   font-size: var(--copyright-text-font-size);
-} */
+}
 
 /*---------------------------------------
   SOCIAL ICON               
@@ -719,6 +727,23 @@ strong {
   .heroText p {
     font-size: 14px;
   }
+
+  .custom-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    height: 200%;
+  }
+
+  .overlay {
+    background: linear-gradient(to top, #000, transparent 90%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 359px) {
@@ -727,3 +752,11 @@ strong {
   }
 }
 
+/* google icons  */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 30;
+}
+
+.waaromPW {
+  font-size: 3rem;
+}
