@@ -1,11 +1,3 @@
-/*
-
-TemplateMo 567 Nomad Force
-
-https://templatemo.com/tm-567-nomad-force
-
-*/
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -21,19 +13,18 @@ https://templatemo.com/tm-567-nomad-force
   --p-color: #353535;
   --p-color-light: #d0d0d0;
 
-  --body-font-family: sans-serif;
-
+  --body-font-family: "Liter", sans-serif;
   --h1-font-size: 72px;
   --h2-font-size: 42px;
   --h3-font-size: 36px;
   --h4-font-size: 32px;
   --h5-font-size: 24px;
   --h6-font-size: 22px;
-  --p-font-size: 20px;
+  --p-font-size: 18px;
   --copyright-text-font-size: 14px;
   --custom-link-font-size: 12px;
 
-  --font-weight-light: 300;
+  --font-weight-light: 400;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --font-weight-black: 900;
@@ -48,6 +39,7 @@ body {
   background: var(--white-color);
   font-family: var(--body-font-family);
   position: relative;
+  text-align: justify;
 }
 
 /*---------------------------------------
@@ -169,6 +161,19 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+/* fonts */
+.liter-regular {
+  font-family: "Liter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.darumadrop-one-regular {
+  font-family: "Darumadrop One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*---------------------------------------
@@ -563,15 +568,12 @@ strong {
   background-color: #e7e7e7;
 }
 
-.section-pw{
+.section-pw {
   background-color: #004c70;
 }
 
-.section-dark{
-  
-  background:  var(--section-dark);
-  
-
+.section-dark {
+  background: var(--section-dark);
 }
 
 /*---------------------------------------
@@ -670,9 +672,7 @@ strong {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (min-width: 1600px) {
-  .news-two-column {
-    min-height: 232.5px;
-  }
+  
 }
 
 @media screen and (max-width: 991px) {
