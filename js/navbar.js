@@ -12,6 +12,7 @@
     if (sectionPosition.top <= 0) {
       navbar.classList.remove('navbar-dark');
       navbar.classList.add('navbar-light');
+      navbar.classList.add('navbar-background-light');
       navbar.classList.remove('navbar-custom-dark');
       navbar.classList.add('navbar-custom-light');
       document.getElementById("logo").src="/images/index/logoBluewhite.png"
@@ -20,6 +21,7 @@
       navbar.classList.add('navbar-dark');
       navbar.classList.add('navbar-custom-dark');
       navbar.classList.remove('navbar-custom-light');
+      navbar.classList.remove('navbar-background-light');
       document.getElementById("logo").src="/images/index/logoWhiteblue.png"
     }
   }
