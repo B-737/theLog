@@ -1,8 +1,8 @@
 .video-container {
   width: 100vw;
   height: auto;
-  opacity: 30%;
-  filter: contrast(150%);
+  opacity: 40%;
+  filter: contrast(125%);
   }
 
   .video-text{
