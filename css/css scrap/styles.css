@@ -1,0 +1,107 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.lighterbackgroundcolor {
+  background-color: rgba(243, 243, 243, 0.805);
+}
+
+.lightbackgroundcolor {
+  background-color: rgb(255, 255, 255);
+}
+
+.darkerbackgroundcolor {
+  background-color: rgba(196, 196, 196, 0.555);
+}
+
+.darkestbackgroundcolor {
+  background-color: rgb(32, 32, 32);
+}
+
+.logokleurbackgroundcolor {
+  background-color: #004c70;
+}
+
+.logokleurPW {
+  color: #004c70;
+}
+
+/* ACHTERGROND IMAGES  */
+
+/* voor klein tot medium scherm */
+.videoPowerBackgroundImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
+    url("/resources/images/Boonk 3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: left 0%; */
+  background-position-y: center;
+}
+
+/* alignment voor klein scherm  */
+.backgroundcontact {
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
+    url("/resources/images/Sequence\ 01.00_00_01_24.Still001.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* alles boven medium size scherm */
+@media (min-width: 992px) { 
+
+  .backgroundcontact {
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
+      url("/resources/images/Sequence\ 01.00_00_01_24.Still001.jpg");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100vw;
+    background-position: center 10%;
+  }
+
+  .videoPowerBackgroundImage {
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.5)),
+      url("/resources/images/Boonk 3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: left 0%; */
+    background-position-y: center;
+  }
+
+}
+
+
+
+
+/* Custom Transparent Navbar */
+.navbar-custom-dark {
+  background: rgba(0, 0, 0, 0.2); /* Black with 50% transparency */
+  backdrop-filter: blur(1px); /* Adds a slight blur effect */
+}
+
+.navbar-custom-light {
+  background: rgba(255, 255, 255, 0.644); /* Black with 50% transparency */
+  backdrop-filter: blur(3px); /* Adds a slight blur effect */
+}
+
+.navshadow {
+  text-shadow: 5px 5px 10px black;
+}
+
+
+/* contact modal  */
+
+.card-model .btn-close {
+  float: right;
+  right: 1rem;
+  position: absolute;
+}
+
+.contactcard {
+  color: red;
+  background-color: rgb(208, 208, 208);
+}
+
+.subfont {
+  font-size: 1.5rem;
+}
