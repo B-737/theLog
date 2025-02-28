@@ -1,0 +1,24 @@
+/* ANNO 2017 */
+#anno {
+          background:
+          /* top, transparent black, faked with gradient */ linear-gradient(
+              rgba(0, 0, 0, 0.4),
+              rgba(0, 0, 0, 0.7)
+            ),
+            /* bottom, image */
+              url("https://b-737.github.io/houdtvanoud/resources/images/theowner-sm.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        }
+        
+        .anno-quote {
+          text-align: end;
+        }
+
+        
+        .anno .list-group-item {
+          color: #ffffff;
+          opacity: 0.95;
+          border: hsl(0, 0%, 100%, 0) solid 0.4px;
+        }
