@@ -1,8 +1,9 @@
 .video-container {
-  width: 100vw;
+  width: 101vw;
   height: auto;
   opacity: 30%;
   filter: contrast(150%);
+  margin-bottom: -10px;
   }
 
   .video-text{
@@ -12,7 +13,7 @@
 
 .darken-video {
   background-color: black;
-  height: 99.5%;
+  height: 100%;
   width: 200%;
   color: black;
 }

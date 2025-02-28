@@ -150,8 +150,111 @@
       </nav>
     </header>
 
+
+
     <main>
-      <section class="hero" id="hero">
+              <!-- hero mobile  -->
+    <div class="position-relative overflow-hidden d-none d-sm-block d-md-none">
+          <div class="darken-video position-absolute"></div>
+          <div class="container video-text text-light position-absolute ms-3">
+            <h1>Doen waar u geen tijd, zin of kennis van heeft.</h1>
+            <p class="text-light pt-2">
+              Van ouderwetse handgereedschappen tot moderne power-tools. Jouw
+              meubel, kozijn of plank is bij ons in de juiste handen.
+            </p>
+    
+            <a
+              class="btn btn-light btn btn-left"
+              href="https://b-737.github.io/houdtvanoud/projecten"
+            >
+              <i class="fa-solid fa-clipboard"></i> Zie projecten
+            </a>
+    
+            <!-- Button trigger modal -->
+    
+            <button
+              type="button"
+              class="btn btn-outline-light btn"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              <i class="fa-solid fa-message"></i> Contact
+            </button>
+          </div>
+    
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="contactModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="card bg-dark border-transparent">
+                  <img
+                    class="card-img-top"
+                    src="./resources/images/contact-sm.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+    
+                    <h1 class="card-title">Contact</h1>
+                    <p class="card-contact">
+                      7 dagen per week beschikbaar via mail en WhatsApp.
+                    </p>
+                    Liever bellen? Van 09:00 en 20:00 ben ik telefonisch bereikbaar.
+                    <hr />
+                    <p class="text-body-secondary">0613059672</p>
+                    <p class="text-body-secondary">info@houdtvanoud.nl</p>
+    
+                    <a
+                      href="https://wa.me/+31613059672?text=Hallo Erwin, ik vond het Whatsapp linkje op je website. Zou jij"
+                      target="_blank"
+                      class="link-success"
+                      ><i class="fa-brands fa-whatsapp fa-2xl p-2"></i
+                    ></a>
+    
+                    <!-- merge -->
+                    <a
+                      href="https://www.facebook.com/people/Houdt-van-Oud/pfbid02skyDPr8MQPcq7Zj9GooStCw52KuarmAHKsWjGrHhABcDz75e7Vu1UGoCZnMSXERFl/"
+                      class="link-primary"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-facebook fa-2xl p-2"></i
+                    ></a>
+    
+                    <a href="mailto:info@houdtvanoud.nl" class="link-secondary"
+                      ><i class="fa-solid fa-envelope fa-2xl p-2"></i
+                    ></a>
+                    <a href="tel:+31613059672" class="link-secondary"
+                      ><i class="fa-solid fa-phone fa-2xl p-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <video autoplay loop muted class="vid-bg video-container">
+            <source
+              src="/media/zaag mobile.mp4"
+              type="video/mp4"
+              class="darker-span"
+            />
+            Your browser does not support the video tag. We suggest you upgrade your
+            browser.
+          </video>
+        </div>
+          <!-- hero large  -->
+      <section class="hero d-sm-none d-md-block" id="hero">
         <div
           class="heroText word-wrap d-none d-sm-none d-md-block d-flex text-start"
         >
@@ -273,7 +376,7 @@
         <div class="container">
           <div class="row row-cols-1 row-cols-md-2">
             <div
-              class="col justify-content-center align-content-center pe-5 pb-5"
+              class="col justify-content-center align-content-center pb-5"
             >
               <div class="row">
                 <p class="lead text-center">In 2024</p>
@@ -374,16 +477,23 @@
       </section>
 
       <section>
+        <!-- houtbewerking  -->
         <div class="position-relative overflow-hidden">
-          <div class="darken-video position-absolute">
-              
-          </div>
-          <div class="container video-text text-light  position-absolute ms-3">
-                    <h1>Houtbewerking</h1>
-                    <p class="text-light pt-2">Van ouderwetse handgereedschappen tot moderne power-tools. Jouw meubel, kozijn of plank is bij ons in de juiste handen.</p>
-                    <h4 class="text-light">Wist u dat?</h4>
-                    <p class="text-light"><strong>Houdt van Oud</strong> is van oudsher begonnen met meubel restauratie en herstel, vandaar de naam. Klanten vroegen meer, en wij gaven.</p>
-                    <button class="btn btn-primary">Zie meer</button>  <button class="btn btn-secondary ms-2">Projecten</button>
+          <div class="darken-video position-absolute"></div>
+          <div class="container video-text text-light position-absolute ms-3">
+            <h1>Houtbewerking</h1>
+            <p class="text-light pt-2">
+              Van ouderwetse handgereedschappen tot moderne power-tools. Jouw
+              meubel, kozijn of plank is bij ons in de juiste handen.
+            </p>
+            <h4 class="text-light">Wist u dat?</h4>
+            <p class="text-light">
+              <strong>Houdt van Oud</strong> is van oudsher begonnen met meubel
+              restauratie en herstel, vandaar de naam. Klanten vroegen meer, en
+              wij gaven.
+            </p>
+            <button class="btn btn-primary">Zie meer</button>
+            <button class="btn btn-secondary ms-2">Projecten</button>
           </div>
 
           <video autoplay loop muted class="vid-bg video-container">
@@ -395,50 +505,30 @@
             Your browser does not support the video tag. We suggest you upgrade
             your browser.
           </video>
-
-        
         </div>
-      </section>
 
-      <!-- Werk section  -->
+        <!-- electra -->
+        <div class="position-relative overflow-hidden">
+          <div class="darken-video position-absolute"></div>
+          <div class="container video-text text-light position-absolute ms-3">
+            <h1>Electra</h1>
+            <p class="text-light pt-2">
+              Van ouderwetse handgereedschappen tot moderne power-tools. Jouw
+              meubel, kozijn of plank is bij ons in de juiste handen.
+            </p>
 
-      <section class="section-padding section-light">
-        <div class="container">
-          <div class="">
-            <h2>Ervaren in</h2>
+            <button class="btn btn-primary">Projecten</button>
           </div>
 
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-            <div class="col">
-              <div class="card h-100">
-                <img
-                  src="/media/schilder-sm.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Schilderen</h5>
-                  <p class="card-text text-start">
-                    Ouderwetse schildertechniek tot modern drukspuit werk, bij u
-                    op locatie of op de zaak. Muur of kast af? Dan zijn we pas
-                    klaar als alles opgeruimd is, dar staan we voor.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="/media/job-hout.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Houtbewerking</h5>
-                  <p class="card-text text-start">
-                    Van ouderwetse handgereedschappen tot moderne power-tools.
-                    Jouw meubel, kozijn of plank is bij mij in de juiste handen.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <video autoplay loop muted class="vid-bg video-container">
+            <source
+              src="/media/zaag mobile.mp4"
+              type="video/mp4"
+              class="darker-span"
+            />
+            Your browser does not support the video tag. We suggest you upgrade
+            your browser.
+          </video>
         </div>
       </section>
 
