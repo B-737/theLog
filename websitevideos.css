@@ -18,3 +18,7 @@
   width: 100%;
   color: black;
 }
+
+.logo-hero{
+          z-index: 2;
+}

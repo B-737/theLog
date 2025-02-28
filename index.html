@@ -49,7 +49,7 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom-dark"
+        class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom-dark d-none d-md-block d-lg-block d-xl-block"
       >
         <div class="container">
           <!-- Logo + naam-->
@@ -92,9 +92,9 @@
               </li>
 
               <!-- dropdown button in navigatie -->
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle "
                   href="#"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -155,7 +155,17 @@
       <section class="d-lg-none overflow-hidden">
         <div class="position-relative">
           <div class="darken-video position-absolute"></div>
-          <div class="container video-text text-light position-absolute ms-3">
+          <div class="position-absolute m-3 logo-hero">
+                    <a class="navbar-brand" href="www.houdtvanoud.nl">
+                      <div id="brand-font" class="brand-font brand-long dark-section">
+                        <p class="brand-first position-absolute">houdt</p>
+                        <p class="brand-mid position-absolute">van</p>
+                        <p class="brand-last position-absolute">oud</p>
+                      </div>
+                    </a>
+                  </div>
+
+          <div class="container video-text text-light position-absolute mx-3">
             <h1>Doen waar u geen tijd, zin of kennis van heeft.</h1>
             <p class="text-light pt-2">
               Van ouderwetse handgereedschappen tot moderne power-tools. Jouw
@@ -547,9 +557,10 @@
                 Het afgelopen jaar heeft <strong>Houdt van Oud</strong> niet zo
                 hard kunnen werken door gezondheid. Grote en zware projecten
                 zijn voor nu even niet van toepassing. Kleine/normale klussen
-                voegen wij gewoon uit. Neem contact op, en dan laten wij u de
-                mogelijkheden weten. <br />We gaan gewoon door!
+                voegen wij gewoon uit.
               </p>
+              <p> Neem contact op, en dan laten wij u de
+                    mogelijkheden weten. We gaan gewoon door!</p>
             </div>
           </div>
         </div>
@@ -615,8 +626,8 @@
           <div class="row">
             <div class="col-md-6 col-12 design-left">
               <div class="design-title position-relative">
-                <span class="badge design-badge p-2 text-bg-warning">
-                  <p class="d-inline-flex">Ik ontwerp in</p>
+                <span class="badge design-badge p-2 align-content-center">
+                  <p class="d-inline-flex lead">Ik ontwerp in</p>
                   <img
                     id=""
                     src="/media/sketchup-horizontal-rgb.svg"
@@ -660,30 +671,7 @@
                     />
                   </div>
                 </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleAutoplaying"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleAutoplaying"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+              
               </div>
             </div>
           </div>
