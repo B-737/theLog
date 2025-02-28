@@ -13,22 +13,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- google-fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Liter&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Libre Baskerville  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- fontawesome ICONS -->
     <script
       src="https://kit.fontawesome.com/0efb4d4bb4.js"
@@ -44,237 +28,61 @@
     <link rel="stylesheet" href="logo.css" />
     <link rel="stylesheet" href="anno.css" />
     <link rel="stylesheet" href="werk.css" />
+    <link rel="stylesheet" href="ervaren-in" />
     <link rel="stylesheet" href="websitevideos.css" />
+
+    <!-- logo font  -->
+    <!-- Libre Baskerville  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom-dark"
-      >
-        <div class="container">
+   <!-- HERO  -->
+    <!-- shows only on mobile  -->
+    <section class="d-none d-sm-block d-md-none">
+      <div class="position-relative overflow-hidden">
+        <div class="darken-video position-absolute"></div>
+        <div class="nav position-absolute ps-4 pt-3">
           <!-- Logo + naam-->
           <div class="position-relative">
             <a class="navbar-brand" href="www.houdtvanoud.nl">
-              <div id="brand-font" class="brand-font brand-long dark-section">
+              <div id="brand-font" class="brand-font dark-section">
                 <p class="brand-first position-absolute">houdt</p>
                 <p class="brand-mid position-absolute">van</p>
                 <p class="brand-last position-absolute">oud</p>
               </div>
             </a>
           </div>
-
-          <!-- Toggler for mobile view -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Navigation Items -->
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav w-100 d-flex justify-content-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  ><strong>Home</strong></a
-                >
-              </li>
-
-              <!-- dropdown button in navigatie -->
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <strong></strong>Videoproductie
-                </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="bedrijfsfilm.html"
-                      >Bedrijfsfilm</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/promotiefilm.html"
-                      >Promotiefilm</a
-                    >
-                  </li>
-
-                  <li>
-                    <a class="dropdown-item" href="/marketing.html"
-                      >Marketing</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="socialmedia.html"
-                      >Social Video</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="productvideo.html"
-                      >Product Video</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="explainer.html">Explainer</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/werkwijze.html">Werkwijze</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero" id="hero">
-        <div
-          class="heroText word-wrap d-none d-sm-none d-md-block d-flex text-start"
-        >
-          <h1
-            class="text-white mt-5 mb-lg-4 liter-regular display-1"
-            data-aos="zoom-in"
-            data-aos-delay="800"
-          >
-            Doen waar u geen kennis, zin of tijd voor heeft.
+        <div class="video-text-center text-light position-absolute mx-3">
+          <h1 class="display-1">
+            Doen waar u geen zin, tijd of kennis van heeft.
           </h1>
-
-          <p
-            class="text-secondary-white-color lead text-start"
-            data-aos="fade-up"
-            data-aos-delay="1000"
-          >
-            Kijk hoe ik het aanpak, of neem gelijk contact op.
+          <p class="text-light pt-2">
+            Zie welke klussen ik voor u kan uitvoeren, of neem direct contact
+            op.
           </p>
-          <a
-            class="btn btn-light btn btn-left"
-            href="https://b-737.github.io/houdtvanoud/projecten"
-          >
-            <i class="fa-solid fa-clipboard"></i> Zie projecten
-          </a>
 
-          <!-- Button trigger modal -->
-
-          <button
-            type="button"
-            class="btn btn-outline-light btn"
-            data-bs-toggle="modal"
-            data-bs-target="#contactModal"
-          >
-            <i class="fa-solid fa-message"></i> Contact
-          </button>
+          <button class="btn btn-primary">Diensten</button>
+          <button class="btn btn-secondary ms-2">Contact</button>
         </div>
 
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="contactModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="card bg-dark border-transparent">
-                <img
-                  class="card-img-top"
-                  src="./resources/images/contact-sm.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-
-                  <h1 class="card-title">Contact</h1>
-                  <p class="card-contact">
-                    7 dagen per week beschikbaar via mail en WhatsApp.
-                  </p>
-                  Liever bellen? Van 09:00 en 20:00 ben ik
-                  telefonisch bereikbaar.
-                  <hr />
-                  <p class="text-body-secondary">0613059672</p>
-                  <p class="text-body-secondary">info@houdtvanoud.nl</p>
-
-                  <a
-                    href="https://wa.me/+31613059672?text=Hallo Erwin, ik vond het Whatsapp linkje op je website. Zou jij"
-                    target="_blank"
-                    class="link-success"
-                    ><i class="fa-brands fa-whatsapp fa-2xl p-2"></i
-                  ></a>
-
-                  <!-- merge -->
-                  <a
-                    href="https://www.facebook.com/people/Houdt-van-Oud/pfbid02skyDPr8MQPcq7Zj9GooStCw52KuarmAHKsWjGrHhABcDz75e7Vu1UGoCZnMSXERFl/"
-                    class="link-primary"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-facebook fa-2xl p-2"></i
-                  ></a>
-
-                  <a href="mailto:info@houdtvanoud.nl" class="link-secondary"
-                    ><i class="fa-solid fa-envelope fa-2xl p-2"></i
-                  ></a>
-                  <a href="tel:+31613059672" class="link-secondary"
-                    ><i class="fa-solid fa-phone fa-2xl p-2"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="videoWrapper">
-          <video
-            autoplay=""
-            loop=""
-            muted=""
-            class="custom-video"
-            poster="videos/792bd98f3e617786c850493560e11c45.jpg"
-          >
-            <source src="/media/hvt trailer.mp4" type="video/mp4" />
-
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <div class="overlay d-none d-sm-block"></div>
-      </section>
+        <video autoplay loop muted class="video-container">
+          <source src="/media/zaag mobile.mp4" type="video/mp4" class="" />
+          Your browser does not support the video tag. We suggest you upgrade
+          your browser.
+        </video>
+      </div>
 
       <!-- tevreden klanten  -->
       <section class="section-padding section-light">
         <div class="container">
           <div class="row row-cols-1 row-cols-md-2">
-            <div
-              class="col justify-content-center align-content-center pe-5 pb-5"
-            >
+            <div class="col justify-content-center align-content-center pb-5">
               <div class="row">
                 <p class="lead text-center">In 2024</p>
                 <!-- tevreden klanten column  -->
@@ -325,292 +133,189 @@
           </div>
         </div>
       </section>
+    </section>
 
-      <!-- Anno section -->
-      <section id="anno" class="anno section-padding">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-md-4 text-end align-self-center pb-5">
-              <p class="text-light">
-                "Waarom moeilijk doen als het makkelijk kan."
+    <!-- Anno section -->
+    <section id="anno" class="anno section-padding">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-4 text-end align-self-center pb-5">
+            <p class="text-light">
+              "Waarom moeilijk doen als het makkelijk kan."
+            </p>
+            <p class="text-light"><strong>- Erwin de Boer</strong></p>
+          </div>
+
+          <div class="col-md-5 dark">
+            <h2 class="text-light">Anno 2017</h2>
+            <p class="text-light">
+              34 jaar in de technische industrie. Ervaring waar je op kan
+              rekenen, samen met een persoonlijk en op-maat aanpak.
+            </p>
+            <p class="text-light">Reken op:</p>
+
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent">
+                <i
+                  class="fa-solid fa-file-invoice feature-icon fa-lg ps-1 pe-3"
+                >
+                </i>
+                Gratis offerte
+              </li>
+              <li class="list-group-item bg-transparent">
+                <i class="fa-solid fa-comments feature-icon fa-lg pe-2"></i>
+                Binnen 24u reactie
+              </li>
+              <li class="list-group-item bg-transparent">
+                <i class="fa-solid fa-piggy-bank feature-icon fa-lg pe-2"></i>
+                Geen onverwachte kosten
+              </li>
+              <li class="list-group-item bg-transparent">
+                <i
+                  class="fa-solid fa-handshake-simple feature-icon fa-lg pe-2"
+                ></i>
+                Klant tevredenheid voorop
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ervaring op het gebied van  -->
+ <section>
+
+    <!-- Houtbewerking -->
+    <!-- shows only on mobile  -->
+    <section class="d-none d-sm-block d-md-none houtbewerking-section text-light">
+      <div class="position-relative">
+        <div class="darken-video position-absolute"></div>
+        <div class="video-text-top position-absolute ms-3">
+          <h1 class="">34 jaar ervaring op gebied van</h1>
+        </div>
+        <div class="video-text-center text-light position-absolute mx-3">
+          <h1>Houtbewerking</h1>
+          <p class="text-light pt-2">
+            Van ouderwetse handgereedschappen tot moderne power-tools. Jouw
+            meubel, kozijn of plank is bij ons in de juiste handen.
+          </p>
+          <h4 class="text-light">Wist u dat?</h4>
+          <p class="text-light">
+            Van oudsher <strong>Houdt van Oud</strong> begon met meubel
+            restauratie en herstel, vandaar de naam. Klanten vroegen meer, en
+            wij gaven.
+          </p>
+          <button class="btn btn-primary">Zie meer</button>
+          <button class="btn btn-secondary ms-2">Projecten</button>
+        </div>
+
+        <video autoplay loop muted class="video-container">
+          <source src="/media/zaag mobile.mp4" type="video/mp4" class="" />
+          Your browser does not support the video tag. We suggest you upgrade
+          your browser.
+        </video>
+      </div>
+    </section>
+
+    <!-- Electra  -->
+    <!-- shows only on mobile  -->
+    <section class="d-none d-sm-block d-md-none houtbewerking-section text-light">
+          <div class="position-relative">
+            <div class="darken-video position-absolute"></div>
+            <div class="video-text-center display-right text-light position-absolute ms-3">
+              <h1 class="">Electra</h1>
+              <p class="text-light pt-2">
+                Stopcontact en laatpaal zijn makkelijk met text erbij zodat het wat leuker aankleed. Hier kan ook een button bij komen van wat er precies gedaan is op dit gebied.
               </p>
-              <p class="text-light"><strong>- Erwin de Boer</strong></p>
+              <button class="btn btn-primary">Projecten</button>
             </div>
-
-            <div class="col-md-5 dark">
-              <h2 class="text-light">Anno 2017</h2>
-              <p class="text-light">
-                34 jaar in de technische industrie. Ervaring waar je op kan
-                rekenen, samen met een persoonlijk en op-maat aanpak.
-              </p>
-              <p class="text-light">Reken op:</p>
-
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-transparent">
-                  <i
-                    class="fa-solid fa-file-invoice feature-icon fa-lg ps-1 pe-3"
-                  >
-                  </i>
-                  Gratis offerte
-                </li>
-                <li class="list-group-item bg-transparent">
-                  <i class="fa-solid fa-comments feature-icon fa-lg pe-2"></i>
-                  Binnen 24u reactie
-                </li>
-                <li class="list-group-item bg-transparent">
-                  <i class="fa-solid fa-piggy-bank feature-icon fa-lg pe-2"></i>
-                  Geen onverwachte kosten
-                </li>
-                <li class="list-group-item bg-transparent">
-                  <i
-                    class="fa-solid fa-handshake-simple feature-icon fa-lg pe-2"
-                  ></i>
-                  Klant tevredenheid voorop
-                </li>
-              </ul>
-            </div>
+    
+            <video autoplay loop muted class="video-container">
+              <source src="/media/zaag mobile.mp4" type="video/mp4" class="" />
+              Your browser does not support the video tag. We suggest you upgrade
+              your browser.
+            </video>
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="position-relative overflow-hidden">
-          <div class="darken-video position-absolute">
-              
-          </div>
-          <div class="video-text text-light  position-absolute ms-3">
-                    <h1>Houtbewerking</h1>
-                    <p class="text-light pt-2">Van ouderwetse handgereedschappen tot moderne power-tools. Jouw meubel, kozijn of plank is bij ons in de juiste handen.</p>
-                    <h4 class="text-light">Wist u dat?</h4>
-                    <p class="text-light"><strong>Houdt van Oud</strong> is van oudsher begonnen met meubel restauratie en herstel, vandaar de naam. Klanten vroegen meer, en wij gaven.</p>
-                    <button class="btn btn-primary">Zie meer</button>  <button class="btn btn-secondary ms-2">Projecten</button>
-          </div>
-
-          <video autoplay loop muted class="vid-bg video-container">
-            <source
-              src="/media/zaag mobile.mp4"
-              type="video/mp4"
-              class="darker-span"
-            />
-            Your browser does not support the video tag. We suggest you upgrade
-            your browser.
-          </video>
-
-        
-        </div>
-      </section>
-
-      <!-- Werk section  -->
-
-      <section class="section-padding section-light">
-        <div class="container">
-          <div class="">
-            <h2>Ervaren in</h2>
-          </div>
-
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-            <div class="col">
-              <div class="card h-100">
-                <img
-                  src="/media/schilder-sm.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Schilderen</h5>
-                  <p class="card-text text-start">
-                    Ouderwetse schildertechniek tot modern drukspuit werk, bij u
-                    op locatie of op de zaak. Muur of kast af? Dan zijn we pas
-                    klaar als alles opgeruimd is, dar staan we voor.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="/media/job-hout.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Houtbewerking</h5>
-                  <p class="card-text text-start">
-                    Van ouderwetse handgereedschappen tot moderne power-tools.
-                    Jouw meubel, kozijn of plank is bij mij in de juiste handen.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+</section>
 
       <!-- ff rustig  -->
 
       <section class="section-padding">
-        <div class="container">
-          <div class="row justify-content-center row-cols-1 row-cols-md-2">
-            <div
-              class="col col-md-1 justify-self-center align-content-center text-center pb-3"
-            >
-              <i class="fa-solid fa-lungs-virus fa-2xl text-danger"></i>
-            </div>
-            <div class="col col-md-11">
-              <h3>Tempo even omlaag</h3>
-              <p>
-                Het afgelopen jaar heeft <strong>Houdt van Oud</strong> niet zo
-                hard kunnen werken door gezondheid. Grote en zware projecten
-                zijn voor nu even niet van toepassing. Kleine/normale klussen
-                voegen wij gewoon uit. Neem contact op, en dan laten wij u de
-                mogelijkheden weten. <br />We gaan gewoon door!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- de aanpak  -->
-
-      <section class="section-gray section-padding">
-        <div class="container">
-          <h2 class="pb-3">De aanpak</h2>
-          <div class="row row-cols-md-3 row-cols-1 g-4">
-            <div class="col align-content-top">
-              <i
-                class="fa-solid fa-magnifying-glass fa-2xl d-inline-flex pe-3"
-              ></i>
-              <h4 class="d-inline-flex">Orienteer</h4>
-
-              <p class="">
-                Kijk op internet naar inspiratie naar wat jij voor ogen hebt.
-                Zie welke mogelijkheden er beschikbaar zijn.
-              </p>
-            </div>
-
-            <div class="col h-100">
-              <div class="row justify-content-between align-items-center">
-                <div class="col position-relative">
-                  <i
-                    class="fa-regular fa-comments fa-2xl d-inline-flex pe-3"
-                  ></i>
-                  <h4 class="d-inline-flex">Contact</h4>
-                  <p class="">
-                    Deel je ideeën en wensen! Formaat, kleur en/of functie werk
-                    ik uit tot in de detail, waarna je een duidelijke offerte
-                    gratis ontvangt. Zo weet je precies weet waar je aan toe
-                    bent.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col h-100">
-              <div class="row justify-content-between align-items-center">
-                <div class="col">
-                  <i
-                    class="fa-solid fa-house-circle-check fa-2xl d-inline-flex pe-3"
-                  ></i>
-                  <h4 class="d-inline-flex">Uitvoering</h4>
-                  <p class="">
-                    Ik ben ook beschikbaar buiten de standaard uren en het
-                    weekend. En, we zijn pas klaar als u 100% tevreden bent.
-                    Uiteraard blijf ik bereikbaar voor service en vragen na
-                    oplevering.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- design -->
-      <section class="section-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-12 design-left">
-              <div class="design-title position-relative">
-                <span class="badge design-badge p-2 text-bg-warning">
-                  <p class="d-inline-flex">Ik ontwerp in</p>
-                  <img
-                    id=""
-                    src="/media/sketchup-horizontal-rgb.svg"
-                    alt=""
-                    class="img-fluid d-inline-flex"
-                  />
-                  <p class="d-inline-flex">.</p>
-                </span>
-                <h2 class="design-text">Design matters</h2>
-                <p>
-                  Bij unieke projecten wordt jouw idee in beeld gebracht door
-                  middel van een 3D teken programma.
-                </p>
-                <br />
-                <p>
-                  Zo krijg je voor we beginnen overzicht over hoe het eruitziet
-                  en wat we leveren. Duidelijk plan.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-6">
+          <div class="container">
+            <div class="row justify-content-center row-cols-1 row-cols-md-2">
               <div
-                id="carouselExampleAutoplaying"
-                class="carousel slide"
-                data-bs-ride="carousel"
+                class="col col-md-1 justify-self-center align-content-center text-center pb-3"
               >
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="3000">
-                    <img
-                      src="/media/design-before.png"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="carousel-item" data-bs-interval="3000">
-                    <img
-                      src="/media/design-after.jpeg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#carouselExampleAutoplaying"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#carouselExampleAutoplaying"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+                <i class="fa-solid fa-lungs-virus fa-2xl text-danger"></i>
+              </div>
+              <div class="col col-md-11">
+                <h3>Tempo even omlaag</h3>
+                <p>
+                  Het afgelopen jaar heeft <strong>Houdt van Oud</strong> niet zo
+                  hard kunnen werken door gezondheid. Grote en zware projecten
+                  zijn voor nu even niet van toepassing. Kleine/normale klussen
+                  voegen wij gewoon uit. Neem contact op, en dan laten wij u de
+                  mogelijkheden weten. <br />We gaan gewoon door!
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
+  <!-- de aanpak  -->
+
+  <section class="section-gray section-padding">
+          <div class="container">
+            <h2 class="pb-3">De aanpak</h2>
+            <div class="row row-cols-md-3 row-cols-1 g-4">
+              <div class="col align-content-top">
+                <i
+                  class="fa-solid fa-signs-post fa-2xl d-inline-flex pe-3"
+                ></i>
+                <h4 class="d-inline-flex">Orienteer</h4>
+  
+                <p class="">
+                  Kijk op internet naar inspiratie naar wat jij voor ogen hebt.
+                  Zie welke mogelijkheden er beschikbaar zijn.
+                </p>
+              </div>
+  
+              <div class="col h-100">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col position-relative">
+                    <i
+                      class="fa-solid fa-comments fa-2xl d-inline-flex pe-3"
+                    ></i>
+                    <h4 class="d-inline-flex">Contact</h4>
+                    <p class="">
+                      Deel je ideeën en wensen! Formaat, kleur en/of functie werk
+                      ik uit tot in de detail, waarna je een duidelijke offerte
+                      gratis ontvangt. Zo weet je precies weet waar je aan toe
+                      bent.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col h-100">
+                <div class="row justify-content-between align-items-center">
+                  <div class="col">
+                    <i
+                      class="fa-solid fa-house-circle-check fa-2xl d-inline-flex pe-3"
+                    ></i>
+                    <h4 class="d-inline-flex">Uitvoering</h4>
+                    <p class="">
+                      Ik ben ook beschikbaar buiten de standaard uren en het
+                      weekend. En, we zijn pas klaar als u 100% tevreden bent.
+                      Uiteraard blijf ik bereikbaar voor service en vragen na
+                      oplevering.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
   </body>
 </html>
