@@ -1,0 +1,18 @@
+.video-container {
+  width: 100vw;
+  height: auto;
+  opacity: 30%;
+  filter: contrast(150%);
+  }
+
+  .video-text{
+          top: 30%;
+          z-index: 3;
+  }
+
+.darken-video {
+  background-color: black;
+  height: 99.5%;
+  width: 200%;
+  color: black;
+}
